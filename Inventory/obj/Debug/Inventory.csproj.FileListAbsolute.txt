@@ -1,0 +1,12 @@
+D:\gitbash\Inventory\Inventory\bin\Debug\Inventory.exe.config
+D:\gitbash\Inventory\Inventory\bin\Debug\Inventory.exe
+D:\gitbash\Inventory\Inventory\bin\Debug\Inventory.pdb
+D:\gitbash\Inventory\Inventory\obj\Debug\Inventory.csproj.AssemblyReference.cache
+D:\gitbash\Inventory\Inventory\obj\Debug\Inventory.csproj.SuggestedBindingRedirects.cache
+D:\gitbash\Inventory\Inventory\obj\Debug\Inventory.Login.resources
+D:\gitbash\Inventory\Inventory\obj\Debug\Inventory.Properties.Resources.resources
+D:\gitbash\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.cache
+D:\gitbash\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+D:\gitbash\Inventory\Inventory\obj\Debug\Inventory.exe
+D:\gitbash\Inventory\Inventory\obj\Debug\Inventory.pdb
+D:\gitbash\Inventory\Inventory\obj\Debug\Inventory.Stockbarang.resources
