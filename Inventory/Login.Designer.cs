@@ -71,9 +71,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(75, 83);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(362, 33);
+            this.label1.Size = new System.Drawing.Size(334, 33);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Welcome to Shopventory";
+            this.label1.Text = "elcome to Shopventory";
             // 
             // button1
             // 
@@ -167,6 +167,7 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "To keep connected with us please login with your \r\npersonal information by Userna" +
     "me and password.";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Login
             // 
