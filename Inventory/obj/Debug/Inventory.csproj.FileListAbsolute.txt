@@ -10,3 +10,17 @@ D:\gitbash\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cach
 D:\gitbash\Inventory\Inventory\obj\Debug\Inventory.exe
 D:\gitbash\Inventory\Inventory\obj\Debug\Inventory.pdb
 D:\gitbash\Inventory\Inventory\obj\Debug\Inventory.Stockbarang.resources
+C:\Users\kodrat\source\repos\shopventory\Inventory\bin\Debug\Inventory.exe.config
+C:\Users\kodrat\source\repos\shopventory\Inventory\bin\Debug\Inventory.exe
+C:\Users\kodrat\source\repos\shopventory\Inventory\bin\Debug\Inventory.pdb
+C:\Users\kodrat\source\repos\shopventory\Inventory\obj\Debug\Inventory.csproj.AssemblyReference.cache
+C:\Users\kodrat\source\repos\shopventory\Inventory\obj\Debug\Inventory.csproj.SuggestedBindingRedirects.cache
+C:\Users\kodrat\source\repos\shopventory\Inventory\obj\Debug\Inventory.Login.resources
+C:\Users\kodrat\source\repos\shopventory\Inventory\obj\Debug\Inventory.Properties.Resources.resources
+C:\Users\kodrat\source\repos\shopventory\Inventory\obj\Debug\Inventory.Dashboard.resources
+C:\Users\kodrat\source\repos\shopventory\Inventory\obj\Debug\Inventory.Register.resources
+C:\Users\kodrat\source\repos\shopventory\Inventory\obj\Debug\Inventory.Stockbarang.resources
+C:\Users\kodrat\source\repos\shopventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.cache
+C:\Users\kodrat\source\repos\shopventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+C:\Users\kodrat\source\repos\shopventory\Inventory\obj\Debug\Inventory.exe
+C:\Users\kodrat\source\repos\shopventory\Inventory\obj\Debug\Inventory.pdb
