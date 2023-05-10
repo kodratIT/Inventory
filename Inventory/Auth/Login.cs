@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Inventory.Admin;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -82,9 +83,10 @@ namespace Inventory
                 {
                     if (_password == txtPass.Text)
                     {
+                        sidebar s = new sidebar();
+                        s.Show();
+                        s.BringToFront();
                         this.Hide();
-                        Dashboard dashboard = new Dashboard();
-                        dashboard.ShowDialog();
                     }
                     else
                     {

@@ -92,6 +92,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="layout\sidebar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="layout\sidebar.Designer.cs">
+      <DependentUpon>sidebar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Auth\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     <Compile Include="Admin\Stockbarang.Designer.cs">
       <DependentUpon>Stockbarang.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="layout\sidebar.resx">
+      <DependentUpon>sidebar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Auth\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +138,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Admin\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -152,6 +162,336 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Briefcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar_today.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chevron_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chevron_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chevron_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chevron_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_0000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_0030.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_0100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_0130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_0300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_0330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_0430.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_0500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_0700.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_0730.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_0900.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_0930.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_1100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_1130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cloud_upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Compass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dislike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document_two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Envelope_closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Envelope_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder_open_side.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Globe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inbox_message_mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Like.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Link_broken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock_closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\More.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\More_horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\More_vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notification_bell_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notification_bell_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone_incoming_call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone_outgoing_call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resize_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resize_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selection_box_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selection_box_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selection_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selection_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_cog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping_basket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smoothie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Video_camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WiFi.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

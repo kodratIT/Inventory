@@ -105,3 +105,4 @@ C:\Users\kodrat\source\repos\InventoryProject\Inventory\obj\Debug\Inventory.cspr
 C:\Users\kodrat\source\repos\InventoryProject\Inventory\obj\Debug\Inventory.exe
 C:\Users\kodrat\source\repos\InventoryProject\Inventory\obj\Debug\Inventory.pdb
 C:\Users\kodrat\source\repos\InventoryProject\Inventory\bin\Debug\Guna.UI.dll
+C:\Users\kodrat\source\repos\InventoryProject\Inventory\obj\Debug\Inventory.Admin.sidebar.resources

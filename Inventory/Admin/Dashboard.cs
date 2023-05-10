@@ -28,5 +28,10 @@ namespace Inventory
             Stockbarang stockbarang = new Stockbarang();
             stockbarang.ShowDialog();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

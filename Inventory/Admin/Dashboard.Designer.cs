@@ -28,283 +28,242 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gunaShadowPanel9 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaShadowPanel8 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaShadowPanel6 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaShadowPanel5 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaShadowPanel4 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaShadowPanel3 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaShadowPanel2 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.gunaShadowPanel4.SuspendLayout();
+            this.gunaShadowPanel3.SuspendLayout();
+            this.gunaShadowPanel2.SuspendLayout();
+            this.gunaShadowPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(0, 43);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(191, 421);
-            this.panel1.TabIndex = 0;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button6.Location = new System.Drawing.Point(12, 329);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(141, 41);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Laporan";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button5.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.button5.Location = new System.Drawing.Point(12, 269);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(141, 40);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Supplier";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button4.Location = new System.Drawing.Point(12, 205);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(141, 44);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Stock Barang";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.Location = new System.Drawing.Point(12, 145);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 40);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Barang Keluar";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Location = new System.Drawing.Point(12, 84);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 40);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Barang Masuk";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button1.Location = new System.Drawing.Point(12, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 41);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Dashboard";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, -4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(191, 48);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panel2.Controls.Add(this.chart4);
-            this.panel2.Controls.Add(this.chart3);
-            this.panel2.Controls.Add(this.chart2);
-            this.panel2.Controls.Add(this.chart1);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(188, -4);
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.panel2.Controls.Add(this.gunaShadowPanel9);
+            this.panel2.Controls.Add(this.gunaShadowPanel8);
+            this.panel2.Controls.Add(this.gunaShadowPanel6);
+            this.panel2.Controls.Add(this.gunaShadowPanel5);
+            this.panel2.Controls.Add(this.gunaShadowPanel4);
+            this.panel2.Controls.Add(this.gunaShadowPanel3);
+            this.panel2.Controls.Add(this.gunaShadowPanel2);
+            this.panel2.Controls.Add(this.gunaShadowPanel1);
+            this.panel2.Location = new System.Drawing.Point(0, 1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(758, 468);
+            this.panel2.Size = new System.Drawing.Size(1004, 665);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // chart4
+            // gunaShadowPanel9
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart4.Legends.Add(legend1);
-            this.chart4.Location = new System.Drawing.Point(399, 316);
-            this.chart4.Name = "chart4";
-            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
-            series1.ChartArea = "ChartArea1";
-            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.Legend = "Legend1";
-            series1.Name = "Supplier";
-            this.chart4.Series.Add(series1);
-            this.chart4.Size = new System.Drawing.Size(333, 136);
-            this.chart4.TabIndex = 8;
-            this.chart4.Text = "chart4";
+            this.gunaShadowPanel9.BackColor = System.Drawing.Color.Transparent;
+            this.gunaShadowPanel9.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel9.Location = new System.Drawing.Point(34, 395);
+            this.gunaShadowPanel9.Name = "gunaShadowPanel9";
+            this.gunaShadowPanel9.ShadowColor = System.Drawing.Color.Black;
+            this.gunaShadowPanel9.ShadowDepth = 50;
+            this.gunaShadowPanel9.ShadowShift = 3;
+            this.gunaShadowPanel9.Size = new System.Drawing.Size(441, 207);
+            this.gunaShadowPanel9.TabIndex = 5;
             // 
-            // chart3
+            // gunaShadowPanel8
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart3.Legends.Add(legend2);
-            this.chart3.Location = new System.Drawing.Point(26, 316);
-            this.chart3.Name = "chart3";
-            this.chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
-            series2.ChartArea = "ChartArea1";
-            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series2.Legend = "Legend1";
-            series2.Name = "Total Stock Barang";
-            this.chart3.Series.Add(series2);
-            this.chart3.Size = new System.Drawing.Size(343, 136);
-            this.chart3.TabIndex = 7;
-            this.chart3.Text = "chart3";
+            this.gunaShadowPanel8.BackColor = System.Drawing.Color.Transparent;
+            this.gunaShadowPanel8.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel8.Location = new System.Drawing.Point(523, 395);
+            this.gunaShadowPanel8.Name = "gunaShadowPanel8";
+            this.gunaShadowPanel8.ShadowColor = System.Drawing.Color.Black;
+            this.gunaShadowPanel8.ShadowDepth = 50;
+            this.gunaShadowPanel8.ShadowShift = 3;
+            this.gunaShadowPanel8.Size = new System.Drawing.Size(441, 207);
+            this.gunaShadowPanel8.TabIndex = 5;
             // 
-            // chart2
+            // gunaShadowPanel6
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart2.Legends.Add(legend3);
-            this.chart2.Location = new System.Drawing.Point(399, 141);
-            this.chart2.Name = "chart2";
-            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series3.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
-            series3.ChartArea = "ChartArea1";
-            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series3.Legend = "Legend1";
-            series3.Name = "Barang Keluar";
-            this.chart2.Series.Add(series3);
-            this.chart2.Size = new System.Drawing.Size(333, 136);
-            this.chart2.TabIndex = 6;
-            this.chart2.Text = "chart2";
+            this.gunaShadowPanel6.BackColor = System.Drawing.Color.Transparent;
+            this.gunaShadowPanel6.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel6.Location = new System.Drawing.Point(523, 144);
+            this.gunaShadowPanel6.Name = "gunaShadowPanel6";
+            this.gunaShadowPanel6.ShadowColor = System.Drawing.Color.Black;
+            this.gunaShadowPanel6.ShadowDepth = 50;
+            this.gunaShadowPanel6.ShadowShift = 3;
+            this.gunaShadowPanel6.Size = new System.Drawing.Size(441, 207);
+            this.gunaShadowPanel6.TabIndex = 4;
             // 
-            // chart1
+            // gunaShadowPanel5
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
-            this.chart1.Location = new System.Drawing.Point(26, 141);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series4.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
-            series4.ChartArea = "ChartArea1";
-            series4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series4.Legend = "Legend1";
-            series4.Name = "Barang Masuk";
-            this.chart1.Series.Add(series4);
-            this.chart1.Size = new System.Drawing.Size(343, 136);
-            this.chart1.TabIndex = 5;
-            this.chart1.Text = "chart1";
+            this.gunaShadowPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.gunaShadowPanel5.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel5.Location = new System.Drawing.Point(34, 144);
+            this.gunaShadowPanel5.Name = "gunaShadowPanel5";
+            this.gunaShadowPanel5.ShadowColor = System.Drawing.Color.Black;
+            this.gunaShadowPanel5.ShadowDepth = 50;
+            this.gunaShadowPanel5.ShadowShift = 3;
+            this.gunaShadowPanel5.Size = new System.Drawing.Size(441, 207);
+            this.gunaShadowPanel5.TabIndex = 3;
             // 
-            // textBox4
+            // gunaShadowPanel4
             // 
-            this.textBox4.Location = new System.Drawing.Point(559, 76);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(133, 39);
-            this.textBox4.TabIndex = 4;
-            this.textBox4.Text = "Supplier\r\n348786";
+            this.gunaShadowPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaShadowPanel4.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel4.Controls.Add(this.gunaLabel8);
+            this.gunaShadowPanel4.Controls.Add(this.gunaLabel4);
+            this.gunaShadowPanel4.Location = new System.Drawing.Point(756, 29);
+            this.gunaShadowPanel4.Name = "gunaShadowPanel4";
+            this.gunaShadowPanel4.Radius = 2;
+            this.gunaShadowPanel4.ShadowColor = System.Drawing.Color.Black;
+            this.gunaShadowPanel4.ShadowDepth = 50;
+            this.gunaShadowPanel4.ShadowShift = 3;
+            this.gunaShadowPanel4.Size = new System.Drawing.Size(208, 80);
+            this.gunaShadowPanel4.TabIndex = 15;
             // 
-            // textBox3
+            // gunaShadowPanel3
             // 
-            this.textBox3.Location = new System.Drawing.Point(373, 76);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(133, 39);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "Total Stock Barang\r\n464534";
+            this.gunaShadowPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaShadowPanel3.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel3.Controls.Add(this.gunaLabel7);
+            this.gunaShadowPanel3.Controls.Add(this.gunaLabel3);
+            this.gunaShadowPanel3.Location = new System.Drawing.Point(523, 29);
+            this.gunaShadowPanel3.Name = "gunaShadowPanel3";
+            this.gunaShadowPanel3.Radius = 2;
+            this.gunaShadowPanel3.ShadowColor = System.Drawing.Color.Black;
+            this.gunaShadowPanel3.ShadowDepth = 50;
+            this.gunaShadowPanel3.ShadowShift = 3;
+            this.gunaShadowPanel3.Size = new System.Drawing.Size(208, 80);
+            this.gunaShadowPanel3.TabIndex = 15;
             // 
-            // textBox2
+            // gunaShadowPanel2
             // 
-            this.textBox2.Location = new System.Drawing.Point(199, 76);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(133, 39);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Barang Keluar\r\n23214";
+            this.gunaShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel2.Controls.Add(this.gunaLabel6);
+            this.gunaShadowPanel2.Controls.Add(this.gunaLabel2);
+            this.gunaShadowPanel2.Location = new System.Drawing.Point(267, 29);
+            this.gunaShadowPanel2.Name = "gunaShadowPanel2";
+            this.gunaShadowPanel2.Radius = 2;
+            this.gunaShadowPanel2.ShadowColor = System.Drawing.Color.Black;
+            this.gunaShadowPanel2.ShadowDepth = 50;
+            this.gunaShadowPanel2.ShadowShift = 3;
+            this.gunaShadowPanel2.Size = new System.Drawing.Size(208, 80);
+            this.gunaShadowPanel2.TabIndex = 14;
             // 
-            // textBox1
+            // gunaShadowPanel1
             // 
-            this.textBox1.Location = new System.Drawing.Point(21, 76);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 39);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Barang Masuk\r\n23500";
+            this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel1.Controls.Add(this.gunaLabel5);
+            this.gunaShadowPanel1.Controls.Add(this.gunaLabel1);
+            this.gunaShadowPanel1.Location = new System.Drawing.Point(34, 29);
+            this.gunaShadowPanel1.Name = "gunaShadowPanel1";
+            this.gunaShadowPanel1.Radius = 2;
+            this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
+            this.gunaShadowPanel1.ShadowDepth = 50;
+            this.gunaShadowPanel1.ShadowShift = 3;
+            this.gunaShadowPanel1.Size = new System.Drawing.Size(208, 80);
+            this.gunaShadowPanel1.TabIndex = 13;
             // 
-            // panel3
+            // gunaLabel1
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Window;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1054, 48);
-            this.panel3.TabIndex = 0;
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.Gray;
+            this.gunaLabel1.Location = new System.Drawing.Point(17, 12);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(118, 21);
+            this.gunaLabel1.TabIndex = 0;
+            this.gunaLabel1.Text = "Barang Masuk";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.ForeColor = System.Drawing.Color.Gray;
+            this.gunaLabel2.Location = new System.Drawing.Point(16, 12);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(117, 21);
+            this.gunaLabel2.TabIndex = 1;
+            this.gunaLabel2.Text = "Barang Keluar";
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.ForeColor = System.Drawing.Color.Gray;
+            this.gunaLabel3.Location = new System.Drawing.Point(20, 12);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(74, 21);
+            this.gunaLabel3.TabIndex = 2;
+            this.gunaLabel3.Text = "Supplier";
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.ForeColor = System.Drawing.Color.Gray;
+            this.gunaLabel4.Location = new System.Drawing.Point(15, 12);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(50, 21);
+            this.gunaLabel4.TabIndex = 3;
+            this.gunaLabel4.Text = "Store";
+            // 
+            // gunaLabel5
+            // 
+            this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel5.ForeColor = System.Drawing.Color.DarkBlue;
+            this.gunaLabel5.Location = new System.Drawing.Point(15, 36);
+            this.gunaLabel5.Name = "gunaLabel5";
+            this.gunaLabel5.Size = new System.Drawing.Size(84, 32);
+            this.gunaLabel5.TabIndex = 1;
+            this.gunaLabel5.Text = "10981";
+            // 
+            // gunaLabel6
+            // 
+            this.gunaLabel6.AutoSize = true;
+            this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel6.ForeColor = System.Drawing.Color.DarkBlue;
+            this.gunaLabel6.Location = new System.Drawing.Point(14, 36);
+            this.gunaLabel6.Name = "gunaLabel6";
+            this.gunaLabel6.Size = new System.Drawing.Size(84, 32);
+            this.gunaLabel6.TabIndex = 2;
+            this.gunaLabel6.Text = "10981";
+            // 
+            // gunaLabel7
+            // 
+            this.gunaLabel7.AutoSize = true;
+            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel7.ForeColor = System.Drawing.Color.DarkBlue;
+            this.gunaLabel7.Location = new System.Drawing.Point(18, 36);
+            this.gunaLabel7.Name = "gunaLabel7";
+            this.gunaLabel7.Size = new System.Drawing.Size(84, 32);
+            this.gunaLabel7.TabIndex = 3;
+            this.gunaLabel7.Text = "10981";
+            // 
+            // gunaLabel8
+            // 
+            this.gunaLabel8.AutoSize = true;
+            this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel8.ForeColor = System.Drawing.Color.DarkBlue;
+            this.gunaLabel8.Location = new System.Drawing.Point(13, 33);
+            this.gunaLabel8.Name = "gunaLabel8";
+            this.gunaLabel8.Size = new System.Drawing.Size(84, 32);
+            this.gunaLabel8.TabIndex = 4;
+            this.gunaLabel8.Text = "10981";
             // 
             // Dashboard
             // 
@@ -312,44 +271,43 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(944, 460);
+            this.ClientSize = new System.Drawing.Size(1003, 641);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.gunaShadowPanel4.ResumeLayout(false);
+            this.gunaShadowPanel4.PerformLayout();
+            this.gunaShadowPanel3.ResumeLayout(false);
+            this.gunaShadowPanel3.PerformLayout();
+            this.gunaShadowPanel2.ResumeLayout(false);
+            this.gunaShadowPanel2.PerformLayout();
+            this.gunaShadowPanel1.ResumeLayout(false);
+            this.gunaShadowPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart4;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel4;
+        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel3;
+        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel2;
+        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
+        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel5;
+        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel9;
+        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel8;
+        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel6;
+        private Guna.UI.WinForms.GunaLabel gunaLabel8;
+        private Guna.UI.WinForms.GunaLabel gunaLabel4;
+        private Guna.UI.WinForms.GunaLabel gunaLabel7;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel gunaLabel6;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel gunaLabel5;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }
