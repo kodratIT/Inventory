@@ -23,8 +23,8 @@ namespace Inventory
 
         private void Stockbarang_Load(object sender, EventArgs e)
         {
-            viewData();
-            btnStock.BackColor= Color.Blue;
+            //viewData();
+            //btnStock.BackColor= Color.Blue;
             
         }
 
@@ -46,7 +46,7 @@ namespace Inventory
             adapter.Fill(dataTable);
 
             // Tampilkan data dari DataTable ke dalam DataGridView
-            dataTabel.DataSource = dataTable;
+            //dataTabel.DataSource = dataTable;
         }
 
 

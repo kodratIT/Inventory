@@ -106,3 +106,92 @@ C:\Users\kodrat\source\repos\InventoryProject\Inventory\obj\Debug\Inventory.exe
 C:\Users\kodrat\source\repos\InventoryProject\Inventory\obj\Debug\Inventory.pdb
 C:\Users\kodrat\source\repos\InventoryProject\Inventory\bin\Debug\Guna.UI.dll
 C:\Users\kodrat\source\repos\InventoryProject\Inventory\obj\Debug\Inventory.Admin.sidebar.resources
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\Inventory.exe.config
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\Inventory.exe
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\Inventory.pdb
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\BouncyCastle.Crypto.dll
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\Google.Protobuf.dll
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.dll
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\K4os.Hash.xxHash.dll
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\MySql.Data.dll
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\System.Buffers.dll
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\System.IO.Pipelines.dll
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\System.Memory.dll
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\System.Numerics.Vectors.dll
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\BouncyCastle.Crypto.xml
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\Google.Protobuf.pdb
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\Google.Protobuf.xml
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.xml
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\K4os.Hash.xxHash.xml
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\MySql.Data.xml
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\System.Buffers.xml
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\System.IO.Pipelines.xml
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\System.Memory.xml
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\System.Numerics.Vectors.xml
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.csproj.AssemblyReference.cache
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.csproj.SuggestedBindingRedirects.cache
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.Admin.sidebar.resources
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.Login.resources
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.Properties.Resources.resources
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.Dashboard.resources
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.Register.resources
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.Stockbarang.resources
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.cache
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.csproj.CopyComplete
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.exe
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.pdb
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.Admin.brg_in.resources
+C:\1. CODE POLITAN\fiqri\Inventory\Inventory\obj\Debug\Inventory.Admin.brg_out.resources
+E:\github\fiqri\Inventory\Inventory\bin\Debug\Inventory.exe.config
+E:\github\fiqri\Inventory\Inventory\bin\Debug\Inventory.exe
+E:\github\fiqri\Inventory\Inventory\bin\Debug\Inventory.pdb
+E:\github\fiqri\Inventory\Inventory\bin\Debug\BouncyCastle.Crypto.dll
+E:\github\fiqri\Inventory\Inventory\bin\Debug\Google.Protobuf.dll
+E:\github\fiqri\Inventory\Inventory\bin\Debug\Guna.UI.dll
+E:\github\fiqri\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.dll
+E:\github\fiqri\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\github\fiqri\Inventory\Inventory\bin\Debug\K4os.Hash.xxHash.dll
+E:\github\fiqri\Inventory\Inventory\bin\Debug\MySql.Data.dll
+E:\github\fiqri\Inventory\Inventory\bin\Debug\System.Buffers.dll
+E:\github\fiqri\Inventory\Inventory\bin\Debug\System.IO.Pipelines.dll
+E:\github\fiqri\Inventory\Inventory\bin\Debug\System.Memory.dll
+E:\github\fiqri\Inventory\Inventory\bin\Debug\System.Numerics.Vectors.dll
+E:\github\fiqri\Inventory\Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\github\fiqri\Inventory\Inventory\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\github\fiqri\Inventory\Inventory\bin\Debug\BouncyCastle.Crypto.xml
+E:\github\fiqri\Inventory\Inventory\bin\Debug\Google.Protobuf.pdb
+E:\github\fiqri\Inventory\Inventory\bin\Debug\Google.Protobuf.xml
+E:\github\fiqri\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.xml
+E:\github\fiqri\Inventory\Inventory\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\github\fiqri\Inventory\Inventory\bin\Debug\K4os.Hash.xxHash.xml
+E:\github\fiqri\Inventory\Inventory\bin\Debug\MySql.Data.xml
+E:\github\fiqri\Inventory\Inventory\bin\Debug\System.Buffers.xml
+E:\github\fiqri\Inventory\Inventory\bin\Debug\System.IO.Pipelines.xml
+E:\github\fiqri\Inventory\Inventory\bin\Debug\System.Memory.xml
+E:\github\fiqri\Inventory\Inventory\bin\Debug\System.Numerics.Vectors.xml
+E:\github\fiqri\Inventory\Inventory\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\github\fiqri\Inventory\Inventory\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.csproj.AssemblyReference.cache
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.csproj.SuggestedBindingRedirects.cache
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.Admin.brg_in.resources
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.Admin.brg_out.resources
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.Admin.rwyt_brg_out.resources
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.Admin.rwyt_brg_in.resources
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.Admin.sidebar.resources
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.Login.resources
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.Properties.Resources.resources
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.Dashboard.resources
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.Register.resources
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.Stockbarang.resources
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.cache
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.csproj.CopyComplete
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.exe
+E:\github\fiqri\Inventory\Inventory\obj\Debug\Inventory.pdb
