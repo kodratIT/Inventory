@@ -92,6 +92,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Brg_In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Brg_In.Designer.cs">
+      <DependentUpon>Brg_In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\brg_out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\brg_out.Designer.cs">
+      <DependentUpon>brg_out.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\rwyt_brg_out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\rwyt_brg_out.Designer.cs">
+      <DependentUpon>rwyt_brg_out.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\rwyt_brg_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\rwyt_brg_in.Designer.cs">
+      <DependentUpon>rwyt_brg_in.cs</DependentUpon>
+    </Compile>
     <Compile Include="layout\sidebar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +148,18 @@
     <Compile Include="Admin\Stockbarang.Designer.cs">
       <DependentUpon>Stockbarang.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\Brg_In.resx">
+      <DependentUpon>Brg_In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\brg_out.resx">
+      <DependentUpon>brg_out.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\rwyt_brg_out.resx">
+      <DependentUpon>rwyt_brg_out.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\rwyt_brg_in.resx">
+      <DependentUpon>rwyt_brg_in.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="layout\sidebar.resx">
       <DependentUpon>sidebar.cs</DependentUpon>
     </EmbeddedResource>

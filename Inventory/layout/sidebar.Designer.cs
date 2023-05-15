@@ -157,6 +157,7 @@
             this.gunaButton4.Size = new System.Drawing.Size(160, 42);
             this.gunaButton4.TabIndex = 3;
             this.gunaButton4.Text = "Stock Barang";
+            this.gunaButton4.Click += new System.EventHandler(this.gunaButton4_Click);
             // 
             // gunaButton3
             // 
@@ -181,6 +182,7 @@
             this.gunaButton3.Size = new System.Drawing.Size(160, 42);
             this.gunaButton3.TabIndex = 2;
             this.gunaButton3.Text = "Barang Keluar";
+            this.gunaButton3.Click += new System.EventHandler(this.gunaButton3_Click);
             // 
             // gunaButton2
             // 
@@ -205,6 +207,7 @@
             this.gunaButton2.Size = new System.Drawing.Size(160, 42);
             this.gunaButton2.TabIndex = 1;
             this.gunaButton2.Text = "Barang Masuk";
+            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
             // 
             // gunaButton1
             // 
@@ -254,7 +257,7 @@
             this.gunaControlBox3.IconSize = 15F;
             this.gunaControlBox3.Location = new System.Drawing.Point(1069, 11);
             this.gunaControlBox3.Name = "gunaControlBox3";
-            this.gunaControlBox3.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
+            this.gunaControlBox3.OnHoverBackColor = System.Drawing.Color.WhiteSmoke;
             this.gunaControlBox3.OnHoverIconColor = System.Drawing.Color.White;
             this.gunaControlBox3.OnPressedColor = System.Drawing.Color.Black;
             this.gunaControlBox3.Size = new System.Drawing.Size(45, 29);
@@ -271,7 +274,7 @@
             this.gunaControlBox2.IconSize = 15F;
             this.gunaControlBox2.Location = new System.Drawing.Point(1108, 11);
             this.gunaControlBox2.Name = "gunaControlBox2";
-            this.gunaControlBox2.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
+            this.gunaControlBox2.OnHoverBackColor = System.Drawing.Color.WhiteSmoke;
             this.gunaControlBox2.OnHoverIconColor = System.Drawing.Color.White;
             this.gunaControlBox2.OnPressedColor = System.Drawing.Color.Black;
             this.gunaControlBox2.Size = new System.Drawing.Size(45, 29);
@@ -303,17 +306,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1206, 720);
+            this.ClientSize = new System.Drawing.Size(1206, 640);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gunaPanelContainer);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1206, 720);
-            this.MinimumSize = new System.Drawing.Size(1206, 720);
+            this.MinimumSize = new System.Drawing.Size(1023, 590);
             this.Name = "sidebar";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.sidebar_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();

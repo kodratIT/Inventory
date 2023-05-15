@@ -83,10 +83,10 @@ namespace Inventory
                 {
                     if (_password == txtPass.Text)
                     {
-                        sidebar s = new sidebar();
-                        s.Show();
-                        s.BringToFront();
                         this.Hide();
+                        sidebar s = new sidebar();
+                        s.ShowDialog();
+                        s.BringToFront();
                     }
                     else
                     {

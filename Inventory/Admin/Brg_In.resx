@@ -117,4 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gunaButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAMJJREFUWEftll0Ng0AQhE8CDsABEioBCUhAAhIqAQmVUglIQMIxk8y+kfahzWxI
+        7kvmYTeEb7M5fkqj0fhGrXVAJpU+JN6RWS0PEHYSr2p5kPhtFxNIX8hTpQ9KKVfpg2tGuO5OLQ8S84DZ
+        xYvEvVoeIJyzxCNCNoRr/2dGaa7hBciB8NG6usEv+SwnuChn7QHEOQcugJir8j9qgQbwv2QCiHnyN5V+
+        Ugfg2pGcTyrRADyAaQPEb9SilhcN8FDZuAulnBskYgRxzIe6AAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

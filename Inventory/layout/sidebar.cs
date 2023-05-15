@@ -56,5 +56,20 @@ namespace Inventory.Admin
         {
             
         }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            container(new rwyt_brg_in());
+        }
+
+        private void gunaButton4_Click(object sender, EventArgs e)
+        {
+            container(new Stockbarang());
+        }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+            container(new rwyt_brg_out());
+        }
     }
 }
