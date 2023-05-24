@@ -12,6 +12,7 @@ namespace Inventory.Admin
 {
     public partial class rwyt_brg_out : Form
     {
+        
         public rwyt_brg_out()
         {
             InitializeComponent();

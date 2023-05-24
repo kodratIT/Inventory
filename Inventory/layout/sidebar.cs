@@ -69,7 +69,17 @@ namespace Inventory.Admin
 
         private void gunaButton3_Click(object sender, EventArgs e)
         {
-            container(new rwyt_brg_out());
+            container(new his_out());
+        }
+
+        private void gunaButton5_Click(object sender, EventArgs e)
+        {
+            container(new supplier());
+        }
+
+        private void gunaButton6_Click(object sender, EventArgs e)
+        {
+            container(new store());
         }
     }
 }

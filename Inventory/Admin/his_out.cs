@@ -1,6 +1,5 @@
 ﻿using Guna.UI.WinForms;
 using MySql.Data.MySqlClient;
-using Org.BouncyCastle.Asn1.X509;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +12,11 @@ using System.Windows.Forms;
 
 namespace Inventory.Admin
 {
-    public partial class rwyt_brg_in : Form
+    public partial class his_out : Form
     {
         protected String _db_conn = "server=localhost;database=toko1;uid=root;pwd=\"\"";
 
-        public rwyt_brg_in()
+        public his_out()
         {
             InitializeComponent();
         }
@@ -47,8 +46,9 @@ namespace Inventory.Admin
         {
             MySqlConnection cnn = new MySqlConnection(_db_conn);
             // Buat perintah SQL untuk mengambil seluruh data dari tabel
-            string sql = "SELECT in_transaction.id_transaction AS ID_Transcation,products.product_name AS Product,suppliers.supplier_name AS supplier,in_detail.qty,in_transaction.create_at FROM in_transaction JOIN in_detail ON in_transaction.id_transaction = in_detail.transaction_in_id  JOIN products ON in_detail.product_id = products.product_id JOIN suppliers ON suppliers.id = products.supplier_id ORDER BY create_at DESC";
-                MySqlCommand command = new MySqlCommand(sql, cnn);
+            string sql = "SELECT in_transaction.id_transaction AS ID_Transcation,users.name AS Admin,suppliers.supplier_name AS Name_Supplier,products.product_name AS Name_Product,in_detail.qty,in_transaction.create_at FROM in_transaction JOIN in_detail ON in_transaction.id_transaction = in_detail.transaction_in_id JOIN products ON in_detail.product_id = products.product_id JOIN suppliers ON in_transaction.supplier_id = suppliers.id JOIN users ON in_transaction.user_id = users.id;";
+            // Buat perintah SQL untuk mengambil seluruh data dari tabel
+            MySqlCommand command = new MySqlCommand(sql, cnn);
 
             // Buat objek DataAdapter dan DataTable
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);

@@ -51,8 +51,12 @@
             // 
             // gunaPanelContainer
             // 
-            this.gunaPanelContainer.Location = new System.Drawing.Point(203, 61);
-            this.gunaPanelContainer.MaximumSize = new System.Drawing.Size(1003, 714);
+            this.gunaPanelContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaPanelContainer.AutoSize = true;
+            this.gunaPanelContainer.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaPanelContainer.Location = new System.Drawing.Point(205, 61);
             this.gunaPanelContainer.Name = "gunaPanelContainer";
             this.gunaPanelContainer.Size = new System.Drawing.Size(1003, 714);
             this.gunaPanelContainer.TabIndex = 0;
@@ -109,6 +113,7 @@
             this.gunaButton6.Size = new System.Drawing.Size(160, 42);
             this.gunaButton6.TabIndex = 5;
             this.gunaButton6.Text = "Store";
+            this.gunaButton6.Click += new System.EventHandler(this.gunaButton6_Click);
             // 
             // gunaButton5
             // 
@@ -133,6 +138,7 @@
             this.gunaButton5.Size = new System.Drawing.Size(160, 42);
             this.gunaButton5.TabIndex = 4;
             this.gunaButton5.Text = "Supplier";
+            this.gunaButton5.Click += new System.EventHandler(this.gunaButton5_Click);
             // 
             // gunaButton4
             // 
@@ -236,6 +242,7 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.gunaControlBox3);
@@ -305,22 +312,22 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1206, 640);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gunaPanelContainer);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(1206, 720);
-            this.MinimumSize = new System.Drawing.Size(1023, 590);
             this.Name = "sidebar";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.sidebar_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
