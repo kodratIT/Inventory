@@ -17,6 +17,7 @@ namespace Inventory
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new brg_out());
             Application.Run(new sidebar());
 
         }

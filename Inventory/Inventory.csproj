@@ -128,17 +128,23 @@
     <Compile Include="Admin\rwyt_brg_in.Designer.cs">
       <DependentUpon>rwyt_brg_in.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\store\Store_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\store\Store_add.Designer.cs">
+      <DependentUpon>Store_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\suppliers\Supplier_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\suppliers\Supplier_add.Designer.cs">
+      <DependentUpon>Supplier_add.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\suppliers\Sup_edit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\suppliers\Sup_edit.Designer.cs">
       <DependentUpon>Sup_edit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\suppliers\Sup_add.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\suppliers\Sup_add.Designer.cs">
-      <DependentUpon>Sup_add.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\suppliers\supplier.cs">
       <SubType>Form</SubType>
@@ -146,11 +152,11 @@
     <Compile Include="Admin\suppliers\supplier.Designer.cs">
       <DependentUpon>supplier.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\store\store.cs">
+    <Compile Include="Admin\store\Store.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\store\store.Designer.cs">
-      <DependentUpon>store.cs</DependentUpon>
+    <Compile Include="Admin\store\Store.Designer.cs">
+      <DependentUpon>Store.cs</DependentUpon>
     </Compile>
     <Compile Include="layout\sidebar.cs">
       <SubType>Form</SubType>
@@ -202,17 +208,20 @@
     <EmbeddedResource Include="Admin\rwyt_brg_in.resx">
       <DependentUpon>rwyt_brg_in.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\store\Store_add.resx">
+      <DependentUpon>Store_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\suppliers\Supplier_add.resx">
+      <DependentUpon>Supplier_add.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\suppliers\Sup_edit.resx">
       <DependentUpon>Sup_edit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\suppliers\Sup_add.resx">
-      <DependentUpon>Sup_add.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\suppliers\supplier.resx">
       <DependentUpon>supplier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\store\store.resx">
-      <DependentUpon>store.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\store\Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="layout\sidebar.resx">
       <DependentUpon>sidebar.cs</DependentUpon>

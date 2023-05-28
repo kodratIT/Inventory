@@ -46,7 +46,7 @@ namespace Inventory.Admin
         {
             MySqlConnection cnn = new MySqlConnection(_db_conn);
             // Buat perintah SQL untuk mengambil seluruh data dari tabel
-            string sql = "SELECT in_transaction.id_transaction AS ID_Transcation,users.name AS Admin,suppliers.supplier_name AS Name_Supplier,products.product_name AS Name_Product,in_detail.qty,in_transaction.create_at FROM in_transaction JOIN in_detail ON in_transaction.id_transaction = in_detail.transaction_in_id JOIN products ON in_detail.product_id = products.product_id JOIN suppliers ON in_transaction.supplier_id = suppliers.id JOIN users ON in_transaction.user_id = users.id;";
+            string sql = "SELECT  * FROM in_transaction";
             // Buat perintah SQL untuk mengambil seluruh data dari tabel
             MySqlCommand command = new MySqlCommand(sql, cnn);
 
@@ -63,8 +63,8 @@ namespace Inventory.Admin
 
         private void gunaButton1_Click_1(object sender, EventArgs e)
         {
-            Brg_In brgin = new Brg_In();
-            brgin.ShowDialog();
+            brg_out brgout = new brg_out();
+            brgout.ShowDialog();
         }
     }
 }

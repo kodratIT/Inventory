@@ -103,8 +103,8 @@ namespace Inventory
 
         private void gunaButton1_Click_1(object sender, EventArgs e)
         {
-            Sup_add add = new Sup_add();
-            add.ShowDialog();
+            Supplier_add ad = new Supplier_add();
+            ad.ShowDialog();
         }
 
         public string getID()

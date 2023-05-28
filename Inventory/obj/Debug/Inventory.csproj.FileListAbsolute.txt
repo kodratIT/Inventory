@@ -244,6 +244,7 @@ C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.p
 C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Admin.Brg_add.resources
 C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.supplier.resources
 C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.store.resources
-C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Admin.suppliers.Sup_add.resources
 C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Admin.suppliers.Sup_edit.resources
 C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Admin.his_out.resources
+C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Admin.store.Store_add.resources
+C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Admin.suppliers.Supplier_add.resources

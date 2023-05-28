@@ -1,4 +1,6 @@
 ﻿using Inventory.Admin;
+using Inventory.Admin.store;
+using Inventory.Admin.suppliers;
 using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
 using System;
@@ -14,11 +16,11 @@ using System.Windows.Forms;
 
 namespace Inventory
 {
-    public partial class store : Form
+    public partial class Store : Form
     {
         protected String _db_conn = "server=localhost;database=toko1;uid=root;pwd=\"\"";
         protected string selectedID = "";
-        public store()
+        public Store()
         {
             InitializeComponent();
         }
@@ -36,7 +38,7 @@ namespace Inventory
         {
             MySqlConnection cnn = new MySqlConnection(_db_conn);
             // Buat perintah SQL untuk mengambil seluruh data dari tabel
-            string sql = "SELECT * FROM products";
+            string sql = "SELECT * FROM stores";
             // Buat perintah SQL untuk mengambil seluruh data dari tabel
             MySqlCommand command = new MySqlCommand(sql, cnn);
 
@@ -53,9 +55,8 @@ namespace Inventory
 
         private void gunaButton2_Click(object sender, EventArgs e)
         {
-            Brg_add brg_add = new Brg_add();
-            brg_add.ShowDialog();
-        }
+           
+         }
 
         private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -96,6 +97,12 @@ namespace Inventory
         private void gunaButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gunaButton1_Click_1(object sender, EventArgs e)
+        {
+            Store_add str_ad = new Store_add();
+            str_ad.ShowDialog();
         }
     }
 }

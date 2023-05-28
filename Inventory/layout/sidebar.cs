@@ -79,7 +79,7 @@ namespace Inventory.Admin
 
         private void gunaButton6_Click(object sender, EventArgs e)
         {
-            container(new store());
+            container(new Store());
         }
     }
 }

@@ -333,7 +333,7 @@ namespace Inventory.Admin
             }
         }
 
-        string GenerateUniqueIDBarangMasuk()
+        private string GenerateUniqueIDBarangMasuk()
         {
             string IDBarangMasuk = string.Empty;
 
