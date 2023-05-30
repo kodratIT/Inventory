@@ -23,5 +23,10 @@ namespace Inventory.Admin
             brg_out brgout = new brg_out();
             brgout.ShowDialog();
         }
+
+        private void rwyt_brg_out_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

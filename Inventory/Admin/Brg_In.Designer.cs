@@ -47,10 +47,9 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(54, 129);
-            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.gunaLabel1.Location = new System.Drawing.Point(72, 159);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(92, 24);
+            this.gunaLabel1.Size = new System.Drawing.Size(119, 29);
             this.gunaLabel1.TabIndex = 3;
             this.gunaLabel1.Text = "ID Barang";
             // 
@@ -67,8 +66,8 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = null;
             this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton3.Location = new System.Drawing.Point(58, 346);
-            this.gunaButton3.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaButton3.Location = new System.Drawing.Point(339, 426);
+            this.gunaButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(102)))), ((int)(((byte)(217)))));
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -76,7 +75,7 @@
             this.gunaButton3.OnHoverImage = null;
             this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton3.Radius = 5;
-            this.gunaButton3.Size = new System.Drawing.Size(77, 34);
+            this.gunaButton3.Size = new System.Drawing.Size(103, 42);
             this.gunaButton3.TabIndex = 4;
             this.gunaButton3.Text = "Reset";
             this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -96,8 +95,8 @@
             this.gunaButton4.Image = null;
             this.gunaButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton4.Location = new System.Drawing.Point(354, 346);
-            this.gunaButton4.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaButton4.Location = new System.Drawing.Point(199, 426);
+            this.gunaButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(102)))), ((int)(((byte)(217)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -105,7 +104,7 @@
             this.gunaButton4.OnHoverImage = null;
             this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton4.Radius = 5;
-            this.gunaButton4.Size = new System.Drawing.Size(86, 34);
+            this.gunaButton4.Size = new System.Drawing.Size(115, 42);
             this.gunaButton4.TabIndex = 5;
             this.gunaButton4.Text = "Simpan";
             this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -115,10 +114,9 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(54, 180);
-            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.gunaLabel2.Location = new System.Drawing.Point(72, 222);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(80, 24);
+            this.gunaLabel2.Size = new System.Drawing.Size(104, 29);
             this.gunaLabel2.TabIndex = 12;
             this.gunaLabel2.Text = "Supplier";
             // 
@@ -126,10 +124,9 @@
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(54, 229);
-            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.gunaLabel4.Location = new System.Drawing.Point(72, 282);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(125, 24);
+            this.gunaLabel4.Size = new System.Drawing.Size(160, 29);
             this.gunaLabel4.TabIndex = 14;
             this.gunaLabel4.Text = "Nama Barang";
             // 
@@ -137,10 +134,9 @@
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(54, 278);
-            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.gunaLabel5.Location = new System.Drawing.Point(72, 342);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(131, 24);
+            this.gunaLabel5.Size = new System.Drawing.Size(166, 29);
             this.gunaLabel5.TabIndex = 16;
             this.gunaLabel5.Text = "Jumlah Masuk";
             this.gunaLabel5.Click += new System.EventHandler(this.gunaLabel5_Click);
@@ -156,13 +152,14 @@
             this.Name_Product.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Name_Product.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.Name_Product.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Name_Product.Location = new System.Drawing.Point(247, 223);
+            this.Name_Product.Location = new System.Drawing.Point(329, 274);
+            this.Name_Product.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name_Product.Name = "Name_Product";
             this.Name_Product.PasswordChar = '\0';
             this.Name_Product.Radius = 5;
             this.Name_Product.ReadOnly = true;
             this.Name_Product.SelectedText = "";
-            this.Name_Product.Size = new System.Drawing.Size(193, 30);
+            this.Name_Product.Size = new System.Drawing.Size(257, 37);
             this.Name_Product.TabIndex = 25;
             // 
             // qty
@@ -176,12 +173,13 @@
             this.qty.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.qty.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.qty.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.qty.Location = new System.Drawing.Point(247, 272);
+            this.qty.Location = new System.Drawing.Point(329, 335);
+            this.qty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.qty.Name = "qty";
             this.qty.PasswordChar = '\0';
             this.qty.Radius = 5;
             this.qty.SelectedText = "";
-            this.qty.Size = new System.Drawing.Size(193, 30);
+            this.qty.Size = new System.Drawing.Size(257, 37);
             this.qty.TabIndex = 26;
             // 
             // gunaControlBox1
@@ -191,12 +189,13 @@
             this.gunaControlBox1.AnimationSpeed = 0.03F;
             this.gunaControlBox1.IconColor = System.Drawing.Color.Black;
             this.gunaControlBox1.IconSize = 15F;
-            this.gunaControlBox1.Location = new System.Drawing.Point(460, 13);
+            this.gunaControlBox1.Location = new System.Drawing.Point(613, 16);
+            this.gunaControlBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaControlBox1.Name = "gunaControlBox1";
             this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.Red;
             this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
             this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.gunaControlBox1.Size = new System.Drawing.Size(60, 36);
             this.gunaControlBox1.TabIndex = 27;
             // 
             // comboBox1
@@ -204,10 +203,11 @@
             this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(231)))), ((int)(((byte)(254)))));
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 20;
-            this.comboBox1.Location = new System.Drawing.Point(247, 133);
+            this.comboBox1.ItemHeight = 25;
+            this.comboBox1.Location = new System.Drawing.Point(329, 164);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(193, 28);
+            this.comboBox1.Size = new System.Drawing.Size(256, 33);
             this.comboBox1.TabIndex = 28;
             this.comboBox1.Text = "Select INC";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -217,9 +217,10 @@
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.BackColor = System.Drawing.Color.White;
             this.gunaLabel3.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(89, 55);
+            this.gunaLabel3.Location = new System.Drawing.Point(119, 68);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(335, 40);
+            this.gunaLabel3.Size = new System.Drawing.Size(413, 51);
             this.gunaLabel3.TabIndex = 30;
             this.gunaLabel3.Text = "Input Barang Masuk";
             // 
@@ -234,22 +235,23 @@
             this.supp_id_name.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.supp_id_name.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.supp_id_name.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.supp_id_name.Location = new System.Drawing.Point(247, 180);
+            this.supp_id_name.Location = new System.Drawing.Point(329, 222);
+            this.supp_id_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.supp_id_name.Name = "supp_id_name";
             this.supp_id_name.PasswordChar = '\0';
             this.supp_id_name.Radius = 5;
             this.supp_id_name.ReadOnly = true;
             this.supp_id_name.SelectedText = "";
-            this.supp_id_name.Size = new System.Drawing.Size(193, 30);
+            this.supp_id_name.Size = new System.Drawing.Size(257, 37);
             this.supp_id_name.TabIndex = 31;
             // 
             // Brg_In
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(517, 431);
+            this.ClientSize = new System.Drawing.Size(689, 530);
             this.Controls.Add(this.supp_id_name);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.comboBox1);
@@ -264,7 +266,7 @@
             this.Controls.Add(this.gunaLabel1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Brg_In";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

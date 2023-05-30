@@ -66,6 +66,41 @@ namespace Inventory.Admin
             Brg_In brgin = new Brg_In();
             brgin.ShowDialog();
         }
+
+        private void gunaLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gunaLineTextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaLineTextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gunaLabel9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaLineTextBox4_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
