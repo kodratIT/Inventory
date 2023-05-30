@@ -1,5 +1,6 @@
 ﻿using Inventory.Admin;
 using Inventory.Admin.suppliers;
+using Inventory.config;
 using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
 using System;
@@ -17,11 +18,13 @@ namespace Inventory
 {
     public partial class supplier : Form
     {
-        protected String _db_conn = "server=localhost;database=toko1;uid=root;pwd=\"\"";
+        protected String _db_conn = "";
         protected string selectedID = "";
         public supplier()
         {
             InitializeComponent();
+            Database db = new Database();
+            _db_conn = db.MysqlConn();
         }
 
         private void Stockbarang_Load(object sender, EventArgs e)

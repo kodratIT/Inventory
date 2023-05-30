@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Inventory.config;
+using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
@@ -14,10 +15,12 @@ namespace Inventory.Admin.store
 {
     public partial class Store_add : Form
     {
-        private string _Mysql = "server=localhost;database=toko1;uid=root;pwd=\"\"";
+        private string _Mysql = "";
         public Store_add()
         {
             InitializeComponent();
+            Database db = new Database();
+            _Mysql = db.MysqlConn();
         }
 
         private void Store()

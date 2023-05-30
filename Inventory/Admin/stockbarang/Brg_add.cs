@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
+﻿using Inventory.config;
+using Microsoft.VisualBasic.ApplicationServices;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -18,12 +19,14 @@ namespace Inventory.Admin
     {
         private String _id_product,_name_product = "";
         private int _price,_qty = 0;
-        protected String Mysql = "server=localhost;database=toko1;uid=root;pwd=\"\"";
+        protected String Mysql = "";
         protected string selectedOption = "";
         protected string _id_sup = "";
         public Brg_add()
         {
             InitializeComponent();
+            Database db = new Database();
+            Mysql = db.MysqlConn();
         }
 
         public Brg_add(String id_product, String name_product,int price)

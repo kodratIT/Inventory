@@ -1,4 +1,5 @@
 ﻿using Guna.UI.WinForms;
+using Inventory.config;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Asn1.X509;
 using System;
@@ -15,11 +16,13 @@ namespace Inventory.Admin
 {
     public partial class rwyt_brg_in : Form
     {
-        protected String _db_conn = "server=localhost;database=toko1;uid=root;pwd=\"\"";
+        protected String _db_conn = "";
 
         public rwyt_brg_in()
         {
             InitializeComponent();
+            Database db = new Database();
+            _db_conn = db.MysqlConn();
         }
 
         private void gunaButton2_Click(object sender, EventArgs e)

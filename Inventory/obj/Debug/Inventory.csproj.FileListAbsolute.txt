@@ -228,7 +228,6 @@ C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.c
 C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.csproj.SuggestedBindingRedirects.cache
 C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Admin.Brg_In.resources
 C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Admin.brg_out.resources
-C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Admin.rwyt_brg_out.resources
 C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Admin.rwyt_brg_in.resources
 C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Admin.sidebar.resources
 C:\Users\kodrat\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Login.resources

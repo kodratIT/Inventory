@@ -1,4 +1,5 @@
 ﻿using Inventory.Admin;
+using Inventory.config;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -17,10 +18,12 @@ namespace Inventory
         protected String _username = "";
         protected String _password = "";
         protected Boolean isLogged = false;
-        protected String _db_conn = "server=localhost;database=toko1;uid=root;pwd=\"\"";
+        protected String _db_conn = "";
         public Login()
         {
             InitializeComponent();
+            Database db= new Database();
+            _db_conn = db.MysqlConn();
         }
 
         public Boolean IsLoggedIn()

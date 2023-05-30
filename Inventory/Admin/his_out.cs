@@ -1,4 +1,5 @@
 ﻿using Guna.UI.WinForms;
+using Inventory.config;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -14,11 +15,13 @@ namespace Inventory.Admin
 {
     public partial class his_out : Form
     {
-        protected String _db_conn = "server=localhost;database=toko1;uid=root;pwd=\"\"";
+        protected String _db_conn = "";
 
         public his_out()
         {
             InitializeComponent();
+            Database db = new Database();
+            _db_conn = db.MysqlConn();
         }
 
         private void gunaButton2_Click(object sender, EventArgs e)

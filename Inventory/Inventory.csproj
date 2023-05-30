@@ -116,12 +116,6 @@
     <Compile Include="Admin\stockbarang\Brg_add.Designer.cs">
       <DependentUpon>Brg_add.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\rwyt_brg_out.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\rwyt_brg_out.Designer.cs">
-      <DependentUpon>rwyt_brg_out.cs</DependentUpon>
-    </Compile>
     <Compile Include="Admin\rwyt_brg_in.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +152,7 @@
     <Compile Include="Admin\store\Store.Designer.cs">
       <DependentUpon>Store.cs</DependentUpon>
     </Compile>
+    <Compile Include="config\Database.cs" />
     <Compile Include="layout\sidebar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,9 +196,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\brg_out.resx">
       <DependentUpon>brg_out.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\rwyt_brg_out.resx">
-      <DependentUpon>rwyt_brg_out.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\rwyt_brg_in.resx">
       <DependentUpon>rwyt_brg_in.cs</DependentUpon>

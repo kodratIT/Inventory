@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Inventory.config;
+using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
 using System;
 using System.Collections;
@@ -15,10 +16,12 @@ namespace Inventory.Admin.suppliers
 {
     public partial class Supplier_add : Form
     {
-        private string _Mysql = "server=localhost;database=toko1;uid=root;pwd=\"\"";
+        private string _Mysql = "";
         public Supplier_add()
         {
             InitializeComponent();
+            Database db = new Database();
+            _Mysql= db.MysqlConn();
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)

@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
+﻿using Inventory.config;
+using Microsoft.VisualBasic.ApplicationServices;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace Inventory.Admin.suppliers
 {
     public partial class Sup_edit : Form
     {
-        protected String _db_conn = "server=localhost;database=toko1;uid=root;pwd=\"\"";
+        protected String _db_conn = "";
         protected string _id = "";
         protected string _name = "";
         protected string _hp = "";
@@ -25,6 +26,8 @@ namespace Inventory.Admin.suppliers
         {
             InitializeComponent();
             this._id = _id;
+            Database db = new Database();
+            _db_conn = db.MysqlConn();
         }
 
         private void Sup_edit_Load(object sender, EventArgs e)

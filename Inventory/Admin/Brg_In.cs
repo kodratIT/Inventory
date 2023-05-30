@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Inventory.config;
+using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace Inventory.Admin
     {
 
        // private ComboBox comboBox;
-        protected String Mysql = "server=localhost;database=toko1;uid=root;pwd=\"\"";
+        protected String Mysql = "";
         protected String selectedOption = "";
         protected string selectedSup ="";
         protected string _supplier_id = "";
@@ -26,6 +27,8 @@ namespace Inventory.Admin
         public Brg_In()
         {
             InitializeComponent();
+            Database db = new Database();
+            Mysql = db.MysqlConn();
         }
 
 

@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Inventory.config;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,11 +19,13 @@ namespace Inventory
         protected String _Email = "";
         protected String _User = "";
         protected String _Pass = "";
-        protected String Mysql = "server=localhost;database=toko1;uid=root;pwd=\"\"";
+        protected String Mysql = "";
 
         public Register()
         {
             InitializeComponent();
+            Database db = new Database();
+            Mysql = db.MysqlConn();
         }
 
 
