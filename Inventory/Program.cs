@@ -27,7 +27,7 @@ namespace Inventory
                 Application.Run(new Login());
                 if(islogin.IsLoggedIn() == true)
                 {
-                    Application.Exit();
+                        Application.Exit();
                     Application.Run(new sidebar());
                 }
             }
