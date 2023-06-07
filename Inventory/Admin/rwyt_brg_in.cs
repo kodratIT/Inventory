@@ -104,6 +104,11 @@ namespace Inventory.Admin
         {
 
         }
+
+        private void gunaLineTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

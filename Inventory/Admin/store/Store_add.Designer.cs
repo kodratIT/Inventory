@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Store_add));
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaName = new Guna.UI.WinForms.GunaTextBox();
             this.hp = new Guna.UI.WinForms.GunaTextBox();
@@ -46,16 +45,18 @@
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.Location = new System.Drawing.Point(160, 42);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(147, 30);
+            this.gunaLabel1.Size = new System.Drawing.Size(149, 32);
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "Tambah Store";
             this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // gunaName
             // 
+            this.gunaName.BackColor = System.Drawing.Color.Transparent;
             this.gunaName.BaseColor = System.Drawing.Color.White;
             this.gunaName.BorderColor = System.Drawing.Color.Silver;
             this.gunaName.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -66,12 +67,14 @@
             this.gunaName.Location = new System.Drawing.Point(130, 125);
             this.gunaName.Name = "gunaName";
             this.gunaName.PasswordChar = '\0';
+            this.gunaName.Radius = 5;
             this.gunaName.SelectedText = "";
             this.gunaName.Size = new System.Drawing.Size(203, 39);
             this.gunaName.TabIndex = 1;
             // 
             // hp
             // 
+            this.hp.BackColor = System.Drawing.Color.Transparent;
             this.hp.BaseColor = System.Drawing.Color.White;
             this.hp.BorderColor = System.Drawing.Color.Silver;
             this.hp.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -82,12 +85,14 @@
             this.hp.Location = new System.Drawing.Point(130, 197);
             this.hp.Name = "hp";
             this.hp.PasswordChar = '\0';
+            this.hp.Radius = 5;
             this.hp.SelectedText = "";
             this.hp.Size = new System.Drawing.Size(203, 39);
             this.hp.TabIndex = 2;
             // 
             // address
             // 
+            this.address.BackColor = System.Drawing.Color.Transparent;
             this.address.BaseColor = System.Drawing.Color.White;
             this.address.BorderColor = System.Drawing.Color.Silver;
             this.address.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -98,12 +103,14 @@
             this.address.Location = new System.Drawing.Point(130, 268);
             this.address.Name = "address";
             this.address.PasswordChar = '\0';
+            this.address.Radius = 5;
             this.address.SelectedText = "";
             this.address.Size = new System.Drawing.Size(203, 39);
             this.address.TabIndex = 3;
             // 
             // des
             // 
+            this.des.BackColor = System.Drawing.Color.Transparent;
             this.des.BaseColor = System.Drawing.Color.White;
             this.des.BorderColor = System.Drawing.Color.Silver;
             this.des.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -114,6 +121,7 @@
             this.des.Location = new System.Drawing.Point(130, 334);
             this.des.Name = "des";
             this.des.PasswordChar = '\0';
+            this.des.Radius = 5;
             this.des.SelectedText = "";
             this.des.Size = new System.Drawing.Size(203, 39);
             this.des.TabIndex = 4;
@@ -162,6 +170,7 @@
             // 
             this.gunaButton1.AnimationHoverSpeed = 0.07F;
             this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
             this.gunaButton1.BaseColor = System.Drawing.Color.ForestGreen;
             this.gunaButton1.BorderColor = System.Drawing.Color.Black;
             this.gunaButton1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -169,7 +178,7 @@
             this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
+            this.gunaButton1.Image = global::Inventory.Properties.Resources.Upload;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton1.Location = new System.Drawing.Point(249, 390);
             this.gunaButton1.Name = "gunaButton1";
@@ -178,6 +187,7 @@
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Radius = 5;
             this.gunaButton1.Size = new System.Drawing.Size(84, 42);
             this.gunaButton1.TabIndex = 9;
             this.gunaButton1.Text = "Simpan";
@@ -204,6 +214,7 @@
             // 
             this.gunaButton2.AnimationHoverSpeed = 0.07F;
             this.gunaButton2.AnimationSpeed = 0.03F;
+            this.gunaButton2.BackColor = System.Drawing.Color.Transparent;
             this.gunaButton2.BaseColor = System.Drawing.Color.Red;
             this.gunaButton2.BorderColor = System.Drawing.Color.Black;
             this.gunaButton2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -211,7 +222,7 @@
             this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton2.Image")));
+            this.gunaButton2.Image = global::Inventory.Properties.Resources.Refresh;
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton2.Location = new System.Drawing.Point(130, 390);
             this.gunaButton2.Name = "gunaButton2";
@@ -220,6 +231,7 @@
             this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton2.Radius = 5;
             this.gunaButton2.Size = new System.Drawing.Size(76, 42);
             this.gunaButton2.TabIndex = 11;
             this.gunaButton2.Text = "Reset";
