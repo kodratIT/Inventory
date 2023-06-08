@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Inventory.config;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,7 @@ namespace Inventory.Admin
 {
     public partial class brg_out : Form
     {
-        protected String Mysql = "server=localhost;database=toko1;uid=root;pwd=\"\"";
+        protected String Mysql = "";
         protected String selectedOption1 ,selectedOption2 = "";
         protected string selectedStr = "";
         protected string _str_id = "";
@@ -23,6 +24,8 @@ namespace Inventory.Admin
         public brg_out()
         {
             InitializeComponent();
+            Database db = new Database();
+            Mysql = db.MysqlConn();
         }
 
 

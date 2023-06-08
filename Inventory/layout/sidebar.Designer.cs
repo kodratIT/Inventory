@@ -97,6 +97,7 @@
             this.gunaButton6.BackColor = System.Drawing.Color.Transparent;
             this.gunaButton6.BaseColor = System.Drawing.Color.White;
             this.gunaButton6.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaButton6.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton6.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -122,6 +123,7 @@
             this.gunaButton5.BackColor = System.Drawing.Color.Transparent;
             this.gunaButton5.BaseColor = System.Drawing.Color.White;
             this.gunaButton5.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -147,6 +149,7 @@
             this.gunaButton4.BackColor = System.Drawing.Color.Transparent;
             this.gunaButton4.BaseColor = System.Drawing.Color.White;
             this.gunaButton4.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -172,6 +175,7 @@
             this.gunaButton3.BackColor = System.Drawing.Color.Transparent;
             this.gunaButton3.BaseColor = System.Drawing.Color.White;
             this.gunaButton3.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -197,6 +201,7 @@
             this.gunaButton2.BackColor = System.Drawing.Color.Transparent;
             this.gunaButton2.BaseColor = System.Drawing.Color.White;
             this.gunaButton2.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -222,6 +227,7 @@
             this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
             this.gunaButton1.BaseColor = System.Drawing.Color.White;
             this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);

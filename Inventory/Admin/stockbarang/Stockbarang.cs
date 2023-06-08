@@ -2,6 +2,7 @@
 using Inventory.config;
 using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
+using MySqlX.XDevAPI.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,8 +30,41 @@ namespace Inventory
         private void Stockbarang_Load(object sender, EventArgs e)
         {
             viewData();
-            //btnStock.BackColor= Color.Blue;
+            statistik("SELECT COUNT(*) AS result FROM products",0);
+            statistik(" SELECT product_name AS result FROM products WHERE stock = (SELECT MIN(stock) FROM products)\r\n", 1);
             
+        }
+
+
+        private void statistik(string query,int data)
+        {
+            using (MySqlConnection connection = new MySqlConnection(_db_conn))
+            {
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    try
+                    {
+                        connection.Open();
+                        MySqlDataReader reader = command.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            total.Text = (data == 0) ? reader["result"].ToString() : total.Text;
+                            low.Text = (data == 1) ? reader["result"].ToString() : low.Text;
+                            //data.Text = (data != 0 && data != 1) ? reader["result2"].ToString() : data.Text;
+
+                        }
+                        reader.Close();
+
+
+                        connection.Close();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                    }
+                }
+            }
         }
 
         // Buat koneksi ke database
@@ -63,14 +97,14 @@ namespace Inventory
         private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
          
-                selectedID = gunaDataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                selectedID = gunaDataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
                
         }
 
         private void btn_hps_Click(object sender, EventArgs e)
         {
-            // Query SQL untuk mengambil data dari tabel
             string query = "DELETE  FROM products WHERE product_id=@product_id";
+            MessageBox.Show(selectedID);
 
             using (MySqlConnection connection = new MySqlConnection(_db_conn))
             {
