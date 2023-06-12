@@ -50,7 +50,6 @@ namespace Inventory
                         {
                             total.Text = (data == 0) ? reader["result"].ToString() : total.Text;
                             low.Text = (data == 1) ? reader["result"].ToString() : low.Text;
-                            //data.Text = (data != 0 && data != 1) ? reader["result2"].ToString() : data.Text;
 
                         }
                         reader.Close();

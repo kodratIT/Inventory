@@ -34,7 +34,6 @@
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaDataGridView2 = new Guna.UI.WinForms.GunaDataGridView();
-            this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
@@ -50,11 +49,11 @@
             // 
             // gunaShadowPanel1
             // 
+            this.gunaShadowPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
             this.gunaShadowPanel1.Controls.Add(this.gunaButton1);
             this.gunaShadowPanel1.Controls.Add(this.gunaDataGridView2);
-            this.gunaShadowPanel1.Controls.Add(this.gunaLabel11);
             this.gunaShadowPanel1.Controls.Add(this.gunaButton3);
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel3);
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel4);
@@ -63,13 +62,13 @@
             this.gunaShadowPanel1.Controls.Add(this.gunaLineTextBox2);
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel1);
             this.gunaShadowPanel1.Controls.Add(this.gunaLineTextBox1);
-            this.gunaShadowPanel1.Location = new System.Drawing.Point(79, 59);
+            this.gunaShadowPanel1.Location = new System.Drawing.Point(42, 83);
             this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
             this.gunaShadowPanel1.Radius = 5;
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.gunaShadowPanel1.ShadowDepth = 200;
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(843, 465);
+            this.gunaShadowPanel1.Size = new System.Drawing.Size(1046, 581);
             this.gunaShadowPanel1.TabIndex = 44;
             // 
             // gunaButton1
@@ -86,7 +85,7 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = global::Inventory.Properties.Resources.Plus;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(727, 12);
+            this.gunaButton1.Location = new System.Drawing.Point(935, 9);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -141,7 +140,7 @@
             this.gunaDataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.gunaDataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gunaDataGridView2.ShowEditingIcon = false;
-            this.gunaDataGridView2.Size = new System.Drawing.Size(794, 311);
+            this.gunaDataGridView2.Size = new System.Drawing.Size(996, 442);
             this.gunaDataGridView2.TabIndex = 68;
             this.gunaDataGridView2.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gunaDataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -166,17 +165,6 @@
             this.gunaDataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // gunaLabel11
-            // 
-            this.gunaLabel11.AutoSize = true;
-            this.gunaLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel11.Location = new System.Drawing.Point(909, 120);
-            this.gunaLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.gunaLabel11.Name = "gunaLabel11";
-            this.gunaLabel11.Size = new System.Drawing.Size(51, 18);
-            this.gunaLabel11.TabIndex = 67;
-            this.gunaLabel11.Text = "Hapus";
-            // 
             // gunaButton3
             // 
             this.gunaButton3.AnimationHoverSpeed = 0.07F;
@@ -191,7 +179,7 @@
             this.gunaButton3.Image = null;
             this.gunaButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton3.Location = new System.Drawing.Point(648, 64);
+            this.gunaButton3.Location = new System.Drawing.Point(864, 69);
             this.gunaButton3.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(231)))), ((int)(((byte)(254)))));
@@ -208,7 +196,7 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(584, 69);
+            this.gunaLabel3.Location = new System.Drawing.Point(800, 74);
             this.gunaLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(63, 18);
@@ -277,7 +265,7 @@
             this.gunaLineTextBox2.Name = "gunaLineTextBox2";
             this.gunaLineTextBox2.PasswordChar = '\0';
             this.gunaLineTextBox2.SelectedText = "";
-            this.gunaLineTextBox2.Size = new System.Drawing.Size(819, 46);
+            this.gunaLineTextBox2.Size = new System.Drawing.Size(1021, 46);
             this.gunaLineTextBox2.TabIndex = 51;
             // 
             // gunaLabel1
@@ -304,18 +292,19 @@
             this.gunaLineTextBox1.Name = "gunaLineTextBox1";
             this.gunaLineTextBox1.PasswordChar = '\0';
             this.gunaLineTextBox1.SelectedText = "";
-            this.gunaLineTextBox1.Size = new System.Drawing.Size(819, 46);
+            this.gunaLineTextBox1.Size = new System.Drawing.Size(1021, 46);
             this.gunaLineTextBox1.TabIndex = 47;
             // 
             // gunaLabel5
             // 
+            this.gunaLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(231)))), ((int)(((byte)(254)))));
             this.gunaLabel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.gunaLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.Image = global::Inventory.Properties.Resources.Arrow_up;
             this.gunaLabel5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.gunaLabel5.Location = new System.Drawing.Point(79, 9);
+            this.gunaLabel5.Location = new System.Drawing.Point(42, 33);
             this.gunaLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(209, 31);
@@ -328,7 +317,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(991, 626);
+            this.ClientSize = new System.Drawing.Size(1120, 727);
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.gunaShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -354,7 +343,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaButton gunaButton3;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaLabel gunaLabel11;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView2;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;

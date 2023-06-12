@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.low = new Guna.UI.WinForms.GunaLabel();
             this.total = new Guna.UI.WinForms.GunaLabel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.btn_hps = new Guna.UI.WinForms.GunaButton();
             this.Btn_edit = new Guna.UI.WinForms.GunaButton();
-            this.low = new Guna.UI.WinForms.GunaLabel();
             this.gunaShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,13 +56,23 @@
             this.gunaShadowPanel1.Controls.Add(this.label4);
             this.gunaShadowPanel1.Controls.Add(this.label3);
             this.gunaShadowPanel1.Controls.Add(this.label1);
-            this.gunaShadowPanel1.Location = new System.Drawing.Point(79, 22);
+            this.gunaShadowPanel1.Location = new System.Drawing.Point(38, 22);
             this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
             this.gunaShadowPanel1.Radius = 5;
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(845, 133);
+            this.gunaShadowPanel1.Size = new System.Drawing.Size(1040, 133);
             this.gunaShadowPanel1.TabIndex = 0;
+            // 
+            // low
+            // 
+            this.low.AutoSize = true;
+            this.low.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.low.Location = new System.Drawing.Point(531, 93);
+            this.low.Name = "low";
+            this.low.Size = new System.Drawing.Size(13, 15);
+            this.low.TabIndex = 6;
+            this.low.Text = "0";
             // 
             // total
             // 
@@ -150,7 +160,7 @@
             this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(82, 216);
+            this.gunaDataGridView1.Location = new System.Drawing.Point(38, 216);
             this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.ReadOnly = true;
@@ -158,7 +168,7 @@
             this.gunaDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.gunaDataGridView1.RowTemplate.Height = 24;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(842, 325);
+            this.gunaDataGridView1.Size = new System.Drawing.Size(1040, 464);
             this.gunaDataGridView1.TabIndex = 1;
             this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -197,7 +207,7 @@
             this.gunaButton2.ForeColor = System.Drawing.Color.Black;
             this.gunaButton2.Image = global::Inventory.Properties.Resources.Cart;
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(620, 169);
+            this.gunaButton2.Location = new System.Drawing.Point(774, 169);
             this.gunaButton2.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(102)))), ((int)(((byte)(217)))));
@@ -225,7 +235,7 @@
             this.btn_hps.ForeColor = System.Drawing.Color.White;
             this.btn_hps.Image = global::Inventory.Properties.Resources.Trash;
             this.btn_hps.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_hps.Location = new System.Drawing.Point(729, 169);
+            this.btn_hps.Location = new System.Drawing.Point(883, 169);
             this.btn_hps.Name = "btn_hps";
             this.btn_hps.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_hps.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -251,7 +261,7 @@
             this.Btn_edit.ForeColor = System.Drawing.Color.White;
             this.Btn_edit.Image = global::Inventory.Properties.Resources.Pen;
             this.Btn_edit.ImageSize = new System.Drawing.Size(20, 20);
-            this.Btn_edit.Location = new System.Drawing.Point(843, 169);
+            this.Btn_edit.Location = new System.Drawing.Point(997, 169);
             this.Btn_edit.Name = "Btn_edit";
             this.Btn_edit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.Btn_edit.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -264,22 +274,12 @@
             this.Btn_edit.Text = "Edit";
             this.Btn_edit.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
-            // low
-            // 
-            this.low.AutoSize = true;
-            this.low.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.low.Location = new System.Drawing.Point(531, 93);
-            this.low.Name = "low";
-            this.low.Size = new System.Drawing.Size(13, 15);
-            this.low.TabIndex = 6;
-            this.low.Text = "0";
-            // 
             // Stockbarang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(1003, 640);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1120, 727);
             this.Controls.Add(this.Btn_edit);
             this.Controls.Add(this.btn_hps);
             this.Controls.Add(this.gunaButton2);
