@@ -15,7 +15,7 @@ namespace Inventory
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+              Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new brg_out());
             Login islogin = new Login();
