@@ -18,8 +18,7 @@ namespace Inventory
               Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new brg_out());
-            Login islogin = new Login();
-            Application.Run(new sidebar());
+            Application.Run(new Login());
             // if(islogin.IsLoggedIn() == true) {
             //    Application.Run(new sidebar());
             //  }
