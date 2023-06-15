@@ -36,7 +36,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel15 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel16 = new Guna.UI.WinForms.GunaLabel();
+            this.strbar = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel17 = new Guna.UI.WinForms.GunaLabel();
             this.gunaCircleProgressBar3 = new Guna.UI.WinForms.GunaCircleProgressBar();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
@@ -46,7 +46,7 @@
             this.gunaCircleProgressBar2 = new Guna.UI.WinForms.GunaCircleProgressBar();
             this.gunaPanel4 = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel18 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel19 = new Guna.UI.WinForms.GunaLabel();
+            this.supbar = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel20 = new Guna.UI.WinForms.GunaLabel();
             this.gunaCircleProgressBar4 = new Guna.UI.WinForms.GunaCircleProgressBar();
             this.gunaAdvenceButton3 = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -165,7 +165,7 @@
             this.gunaPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gunaPanel3.BackColor = System.Drawing.Color.White;
             this.gunaPanel3.Controls.Add(this.gunaLabel15);
-            this.gunaPanel3.Controls.Add(this.gunaLabel16);
+            this.gunaPanel3.Controls.Add(this.strbar);
             this.gunaPanel3.Controls.Add(this.gunaLabel17);
             this.gunaPanel3.Controls.Add(this.gunaCircleProgressBar3);
             this.gunaPanel3.Location = new System.Drawing.Point(586, 454);
@@ -183,16 +183,16 @@
             this.gunaLabel15.TabIndex = 4;
             this.gunaLabel15.Text = "Store";
             // 
-            // gunaLabel16
+            // strbar
             // 
-            this.gunaLabel16.AutoSize = true;
-            this.gunaLabel16.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.gunaLabel16.Location = new System.Drawing.Point(34, 61);
-            this.gunaLabel16.Name = "gunaLabel16";
-            this.gunaLabel16.Size = new System.Drawing.Size(153, 65);
-            this.gunaLabel16.TabIndex = 3;
-            this.gunaLabel16.Text = "1,200";
+            this.strbar.AutoSize = true;
+            this.strbar.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.strbar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.strbar.Location = new System.Drawing.Point(34, 61);
+            this.strbar.Name = "strbar";
+            this.strbar.Size = new System.Drawing.Size(56, 65);
+            this.strbar.TabIndex = 3;
+            this.strbar.Text = "0";
             // 
             // gunaLabel17
             // 
@@ -223,7 +223,7 @@
             this.gunaCircleProgressBar3.TabIndex = 0;
             this.gunaCircleProgressBar3.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.gunaCircleProgressBar3.UseProgressPercentText = true;
-            this.gunaCircleProgressBar3.Value = 20;
+            this.gunaCircleProgressBar3.Value = 2;
             // 
             // gunaPanel2
             // 
@@ -255,9 +255,9 @@
             this.chartKeluar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.chartKeluar.Location = new System.Drawing.Point(34, 61);
             this.chartKeluar.Name = "chartKeluar";
-            this.chartKeluar.Size = new System.Drawing.Size(153, 65);
+            this.chartKeluar.Size = new System.Drawing.Size(56, 65);
             this.chartKeluar.TabIndex = 3;
-            this.chartKeluar.Text = "1,200";
+            this.chartKeluar.Text = "0";
             // 
             // gunaLabel3
             // 
@@ -288,14 +288,14 @@
             this.gunaCircleProgressBar2.TabIndex = 0;
             this.gunaCircleProgressBar2.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.gunaCircleProgressBar2.UseProgressPercentText = true;
-            this.gunaCircleProgressBar2.Value = 20;
+            this.gunaCircleProgressBar2.Value = 22;
             // 
             // gunaPanel4
             // 
             this.gunaPanel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gunaPanel4.BackColor = System.Drawing.Color.White;
             this.gunaPanel4.Controls.Add(this.gunaLabel18);
-            this.gunaPanel4.Controls.Add(this.gunaLabel19);
+            this.gunaPanel4.Controls.Add(this.supbar);
             this.gunaPanel4.Controls.Add(this.gunaLabel20);
             this.gunaPanel4.Controls.Add(this.gunaCircleProgressBar4);
             this.gunaPanel4.Location = new System.Drawing.Point(45, 454);
@@ -313,16 +313,16 @@
             this.gunaLabel18.TabIndex = 3;
             this.gunaLabel18.Text = "Suppliers";
             // 
-            // gunaLabel19
+            // supbar
             // 
-            this.gunaLabel19.AutoSize = true;
-            this.gunaLabel19.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.gunaLabel19.Location = new System.Drawing.Point(52, 61);
-            this.gunaLabel19.Name = "gunaLabel19";
-            this.gunaLabel19.Size = new System.Drawing.Size(153, 65);
-            this.gunaLabel19.TabIndex = 2;
-            this.gunaLabel19.Text = "1,200";
+            this.supbar.AutoSize = true;
+            this.supbar.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supbar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.supbar.Location = new System.Drawing.Point(52, 61);
+            this.supbar.Name = "supbar";
+            this.supbar.Size = new System.Drawing.Size(56, 65);
+            this.supbar.TabIndex = 2;
+            this.supbar.Text = "0";
             // 
             // gunaLabel20
             // 
@@ -353,7 +353,7 @@
             this.gunaCircleProgressBar4.TabIndex = 0;
             this.gunaCircleProgressBar4.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.gunaCircleProgressBar4.UseProgressPercentText = true;
-            this.gunaCircleProgressBar4.Value = 12;
+            this.gunaCircleProgressBar4.Value = 5;
             // 
             // gunaAdvenceButton3
             // 
@@ -446,9 +446,9 @@
             this.chartMasuk.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.chartMasuk.Location = new System.Drawing.Point(52, 61);
             this.chartMasuk.Name = "chartMasuk";
-            this.chartMasuk.Size = new System.Drawing.Size(153, 65);
+            this.chartMasuk.Size = new System.Drawing.Size(56, 65);
             this.chartMasuk.TabIndex = 2;
-            this.chartMasuk.Text = "1,200";
+            this.chartMasuk.Text = "0";
             this.chartMasuk.Click += new System.EventHandler(this.gunaLabel4_Click);
             // 
             // gunaLabel2
@@ -480,7 +480,7 @@
             this.gunaCircleProgressBar1.TabIndex = 0;
             this.gunaCircleProgressBar1.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.gunaCircleProgressBar1.UseProgressPercentText = true;
-            this.gunaCircleProgressBar1.Value = 12;
+            this.gunaCircleProgressBar1.Value = 30;
             // 
             // gunaAdvenceButton1
             // 
@@ -740,12 +740,12 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
         private Guna.UI.WinForms.GunaPanel gunaPanel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel15;
-        private Guna.UI.WinForms.GunaLabel gunaLabel16;
+        private Guna.UI.WinForms.GunaLabel strbar;
         private Guna.UI.WinForms.GunaLabel gunaLabel17;
         private Guna.UI.WinForms.GunaCircleProgressBar gunaCircleProgressBar3;
         private Guna.UI.WinForms.GunaPanel gunaPanel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel18;
-        private Guna.UI.WinForms.GunaLabel gunaLabel19;
+        private Guna.UI.WinForms.GunaLabel supbar;
         private Guna.UI.WinForms.GunaLabel gunaLabel20;
         private Guna.UI.WinForms.GunaCircleProgressBar gunaCircleProgressBar4;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton3;

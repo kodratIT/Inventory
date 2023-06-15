@@ -49,7 +49,7 @@ namespace Inventory.Admin
         {
             MySqlConnection cnn = new MySqlConnection(_db_conn);
             // Buat perintah SQL untuk mengambil seluruh data dari tabel
-            string sql = "SELECT  * FROM in_transaction";
+            string sql = "SELECT out_transaction.out_transaction_id AS TransactionId,users.name AS Admin,stores.store_name AS Store,products.product_name AS Product,create_at,out_detail.qty AS qty FROM out_transaction JOIN stores ON out_transaction.store_id = stores.id JOIN users ON out_transaction.user_id = users.id JOIN out_detail ON out_transaction.out_transaction_id = out_detail.out_transaction_id JOIN products ON out_detail.product_id = products.product_id";
             // Buat perintah SQL untuk mengambil seluruh data dari tabel
             MySqlCommand command = new MySqlCommand(sql, cnn);
 

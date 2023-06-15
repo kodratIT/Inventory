@@ -69,8 +69,6 @@ namespace Inventory.Admin
         {
             selectedOption1 = gunaComboBox1.SelectedItem.ToString();
             searchName();
-            //getStore();
-
         }
 
         private void searchName()
@@ -205,7 +203,7 @@ namespace Inventory.Admin
 
         private void store()
         {
-            string query = "INSERT INTO `out_transaction`(`id`, `user_id`, `store_id`,`create_at`, `description`) VALUES (@id_trans,@user_id,@store_id,@create,@des)";
+            string query = "INSERT INTO `out_transaction`(`out_transaction_id`, `user_id`, `store_id`,`create_at`, `description`) VALUES (@id_trans,@user_id,@store_id,@create,@des)";
 
             DateTime tanggal = DateTime.Now; // Tanggal saat ini
 
