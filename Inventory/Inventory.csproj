@@ -122,6 +122,12 @@
     <Compile Include="Admin\rwyt_brg_in.Designer.cs">
       <DependentUpon>rwyt_brg_in.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\stockbarang\Brg_edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\stockbarang\Brg_edit.Designer.cs">
+      <DependentUpon>Brg_edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\store\Store_add.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\rwyt_brg_in.resx">
       <DependentUpon>rwyt_brg_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\stockbarang\Brg_edit.resx">
+      <DependentUpon>Brg_edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\store\Store_add.resx">
       <DependentUpon>Store_add.cs</DependentUpon>

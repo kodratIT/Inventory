@@ -17,7 +17,7 @@ namespace Inventory.Admin
     public partial class rwyt_brg_in : Form
     {
         protected String _db_conn = "";
-
+        protected int showEntry = 0;
         public rwyt_brg_in()
         {
             InitializeComponent();
@@ -46,12 +46,47 @@ namespace Inventory.Admin
             brgin.ShowDialog();          
         }
 
-        private void DataView()
+        private void DataView(string searchQuery = "")
         {
             MySqlConnection cnn = new MySqlConnection(_db_conn);
+
+            // Ambil jumlah entri yang diinginkan dari GunaComboBox
+            if (cmbShowEntry.SelectedItem != null)
+            {
+                showEntry = int.Parse(cmbShowEntry.SelectedItem.ToString());
+            }
+
+            string sql = "SELECT in_transaction.id_transaction AS ID_Transcation,products.product_name AS Product,suppliers.supplier_name AS supplier,in_detail.qty,in_transaction.create_at FROM in_transaction JOIN in_detail ON in_transaction.id_transaction = in_detail.transaction_in_id  JOIN products ON in_detail.product_id = products.product_id JOIN suppliers ON suppliers.id = products.supplier_id";
+            // Tambahkan kondisi WHERE jika ada pencarian
+            if (!string.IsNullOrEmpty(searchQuery))
+            {
+                sql += " WHERE product_name LIKE @searchQuery OR supplier_name LIKE @searchQuery";
+            }
             // Buat perintah SQL untuk mengambil seluruh data dari tabel
-            string sql = "SELECT in_transaction.id_transaction AS ID_Transcation,products.product_name AS Product,suppliers.supplier_name AS supplier,in_detail.qty,in_transaction.create_at FROM in_transaction JOIN in_detail ON in_transaction.id_transaction = in_detail.transaction_in_id  JOIN products ON in_detail.product_id = products.product_id JOIN suppliers ON suppliers.id = products.supplier_id ORDER BY create_at DESC";
-                MySqlCommand command = new MySqlCommand(sql, cnn);
+            
+            sql += " ORDER BY create_at DESC";
+
+            // Tambahkan klausul LIMIT untuk jumlah entri yang diinginkan
+
+            if (showEntry != 0)
+            {
+                sql += " LIMIT @showEntry";
+            }
+
+            MySqlCommand command = new MySqlCommand(sql, cnn);
+
+            
+
+            if (!string.IsNullOrEmpty(searchQuery))
+            {
+                command.Parameters.AddWithValue("@searchQuery", "%" + searchQuery + "%");
+            }
+
+            // Tambahkan parameter showEntry
+            if (showEntry != 0)
+            {
+                command.Parameters.AddWithValue("@showEntry", showEntry);
+            }
 
             // Buat objek DataAdapter dan DataTable
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
@@ -61,7 +96,7 @@ namespace Inventory.Admin
             adapter.Fill(dataTable);
 
             // Tampilkan data dari DataTable ke dalam DataGridView
-            gunaDataGridView2.DataSource = dataTable;
+            txtSearch.DataSource = dataTable;
         }
 
         private void gunaButton1_Click_1(object sender, EventArgs e)
@@ -108,6 +143,18 @@ namespace Inventory.Admin
         private void gunaLineTextBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void gunaButton2_Click_1(object sender, EventArgs e)
+        {
+            string searchQuery = text.Text;
+
+            DataView(searchQuery);
+        }
+
+        private void cmbShowEntry_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataView();
         }
     }
 }

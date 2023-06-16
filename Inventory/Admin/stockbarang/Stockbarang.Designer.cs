@@ -42,6 +42,7 @@
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.btn_hps = new Guna.UI.WinForms.GunaButton();
             this.Btn_edit = new Guna.UI.WinForms.GunaButton();
+            this.hight = new Guna.UI.WinForms.GunaLabel();
             this.gunaShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +51,7 @@
             // 
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel1.Controls.Add(this.hight);
             this.gunaShadowPanel1.Controls.Add(this.low);
             this.gunaShadowPanel1.Controls.Add(this.total);
             this.gunaShadowPanel1.Controls.Add(this.label5);
@@ -104,9 +106,9 @@
             this.label4.Location = new System.Drawing.Point(297, 57);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 21);
+            this.label4.Size = new System.Drawing.Size(99, 21);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Top Selling";
+            this.label4.Text = "Hight Stock";
             // 
             // label3
             // 
@@ -255,6 +257,7 @@
             this.Btn_edit.BackColor = System.Drawing.Color.Transparent;
             this.Btn_edit.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Btn_edit.BorderColor = System.Drawing.Color.Black;
+            this.Btn_edit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_edit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_edit.FocusedColor = System.Drawing.Color.Empty;
             this.Btn_edit.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -273,6 +276,16 @@
             this.Btn_edit.TabIndex = 6;
             this.Btn_edit.Text = "Edit";
             this.Btn_edit.Click += new System.EventHandler(this.gunaButton1_Click);
+            // 
+            // hight
+            // 
+            this.hight.AutoSize = true;
+            this.hight.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.hight.Location = new System.Drawing.Point(301, 92);
+            this.hight.Name = "hight";
+            this.hight.Size = new System.Drawing.Size(13, 15);
+            this.hight.TabIndex = 7;
+            this.hight.Text = "0";
             // 
             // Stockbarang
             // 
@@ -309,5 +322,6 @@
         private Guna.UI.WinForms.GunaButton Btn_edit;
         private Guna.UI.WinForms.GunaLabel total;
         private Guna.UI.WinForms.GunaLabel low;
+        private Guna.UI.WinForms.GunaLabel hight;
     }
 }

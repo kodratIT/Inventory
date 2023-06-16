@@ -402,3 +402,4 @@ C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Invento
 C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.csproj.CopyComplete
 C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.exe
 C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.pdb
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.Admin.stockbarang.Brg_edit.resources

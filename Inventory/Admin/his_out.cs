@@ -16,6 +16,7 @@ namespace Inventory.Admin
     public partial class his_out : Form
     {
         protected String _db_conn = "";
+        int showEntry =0;
 
         public his_out()
         {
@@ -45,13 +46,49 @@ namespace Inventory.Admin
             brgin.ShowDialog();          
         }
 
-        private void DataView()
+        private void DataView(string searchQuery = "")
         {
             MySqlConnection cnn = new MySqlConnection(_db_conn);
-            // Buat perintah SQL untuk mengambil seluruh data dari tabel
+
+            // Ambil jumlah entri yang diinginkan dari GunaComboBox
+            if (cmbShowEntry.SelectedItem != null)
+            {
+                showEntry = int.Parse(cmbShowEntry.SelectedItem.ToString());
+            }
+
+            // Buat perintah SQL untuk mengambil data dari tabel dengan filter pencarian
             string sql = "SELECT out_transaction.out_transaction_id AS TransactionId,users.name AS Admin,stores.store_name AS Store,products.product_name AS Product,create_at,out_detail.qty AS qty FROM out_transaction JOIN stores ON out_transaction.store_id = stores.id JOIN users ON out_transaction.user_id = users.id JOIN out_detail ON out_transaction.out_transaction_id = out_detail.out_transaction_id JOIN products ON out_detail.product_id = products.product_id";
-            // Buat perintah SQL untuk mengambil seluruh data dari tabel
+
+            // Tambahkan kondisi WHERE jika ada pencarian
+            if (!string.IsNullOrEmpty(searchQuery))
+            {
+                sql += " WHERE product_name LIKE @searchQuery OR store_name LIKE @searchQuery OR store_name LIKE @searchQuery OR name LIKE @searchQuery";
+            }
+
+            sql += " ORDER BY create_at DESC";
+
+            // Tambahkan klausul LIMIT untuk jumlah entri yang diinginkan
+
+            if (showEntry != 0)
+            {
+                sql += " LIMIT @showEntry";
+            }
+
             MySqlCommand command = new MySqlCommand(sql, cnn);
+
+
+            // Tambahkan parameter pencarian jika ada
+            if (!string.IsNullOrEmpty(searchQuery))
+            {
+                command.Parameters.AddWithValue("@searchQuery", "%" + searchQuery + "%");
+            }
+
+            // Tambahkan parameter showEntry
+            if (showEntry  != 0)
+            {
+                command.Parameters.AddWithValue("@showEntry", showEntry);
+            }
+
 
             // Buat objek DataAdapter dan DataTable
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
@@ -68,6 +105,18 @@ namespace Inventory.Admin
         {
             brg_out brgout = new brg_out();
             brgout.ShowDialog();
+        }
+
+        private void gunaButton2_Click_1(object sender, EventArgs e)
+        {
+            string searchQuery = text.Text;
+
+            DataView(searchQuery);
+        }
+
+        private void cmbShowEntry_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataView();
         }
     }
 }

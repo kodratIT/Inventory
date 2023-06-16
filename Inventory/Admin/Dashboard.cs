@@ -105,8 +105,8 @@ namespace Inventory
             statistik("SELECT COUNT(id) AS result FROM stores", 3);
             statistik("SELECT SUM(in_detail.qty) AS result FROM in_transaction LEFT JOIN in_detail ON in_transaction.id_transaction = in_detail.transaction_in_id WHERE in_transaction.create_at >= DATE_SUB(CURDATE(), INTERVAL 7 DAY) AND in_transaction.create_at <= CURDATE()", 4);
             statistik("SELECT SUM(out_detail.qty) AS result FROM out_transaction LEFT JOIN out_detail ON out_transaction.out_transaction_id = out_detail.out_transaction_id WHERE out_transaction.create_at >= DATE_SUB(CURDATE(), INTERVAL 7 DAY) AND out_transaction.create_at <= CURDATE()", 5);
-            statistik("SELECT COUNT(id) AS result FROM `suppliers` WHERE created_at >= DATE_SUB(CURDATE(), INTERVAL 7 DAY) AND created_at <= CURDATE()", 6);
-            statistik("SELECT COUNT(id) AS result FROM `stores` WHERE created_at >= DATE_SUB(CURDATE(), INTERVAL 7 DAY)\r\nAND created_at <= CURDATE()", 7);
+            statistik("SELECT COUNT(id) AS result FROM `suppliers` WHERE created_at >= DATE_SUB(CURDATE(), INTERVAL 30 DAY) AND created_at <= CURDATE()", 6);
+            statistik("SELECT COUNT(id) AS result FROM `stores` WHERE created_at >= DATE_SUB(CURDATE(), INTERVAL 30 DAY)\r\nAND created_at <= CURDATE()", 7);
 
         }
     }

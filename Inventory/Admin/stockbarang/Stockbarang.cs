@@ -1,4 +1,6 @@
 ﻿using Inventory.Admin;
+using Inventory.Admin.stockbarang;
+using Inventory.Admin.suppliers;
 using Inventory.config;
 using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
@@ -31,8 +33,9 @@ namespace Inventory
         {
             viewData();
             statistik("SELECT COUNT(*) AS result FROM products",0);
-            statistik(" SELECT product_name AS result FROM products WHERE stock = (SELECT MIN(stock) FROM products)\r\n", 1);
-            
+            statistik(" SELECT product_name AS result FROM products WHERE stock = (SELECT MIN(stock) FROM products)", 1);
+            statistik(" SELECT product_name AS result FROM products WHERE stock = (SELECT MAX(stock) FROM products)", 2);
+
         }
 
 
@@ -50,6 +53,7 @@ namespace Inventory
                         {
                             total.Text = (data == 0) ? reader["result"].ToString() : total.Text;
                             low.Text = (data == 1) ? reader["result"].ToString() : low.Text;
+                            hight.Text = (data == 2) ? reader["result"].ToString() : hight.Text;
 
                         }
                         reader.Close();
@@ -97,38 +101,58 @@ namespace Inventory
         {
          
                 selectedID = gunaDataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-               
         }
 
         private void btn_hps_Click(object sender, EventArgs e)
         {
-            string query = "DELETE  FROM products WHERE product_id=@product_id";
-            MessageBox.Show(selectedID);
 
-            using (MySqlConnection connection = new MySqlConnection(_db_conn))
+            if (selectedID == "")
             {
-                using (MySqlCommand command = new MySqlCommand(query, connection))
+                MessageBox.Show("Pilih Supplier Terlebih Dahulu!");
+            }
+            else
+            {
+                string query = "DELETE  FROM products WHERE product_id=@product_id";
+
+                using (MySqlConnection connection = new MySqlConnection(_db_conn))
                 {
-                    command.Parameters.AddWithValue("@product_id", selectedID);
-                    try
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
-                        connection.Open();
-                        command.ExecuteNonQuery();
-                        MessageBox.Show("DATA BERHASIL DI HAPUS");
-                        connection.Close();
+                        command.Parameters.AddWithValue("@product_id", selectedID);
+                        try
+                        {
+                            connection.Open();
+                            command.ExecuteNonQuery();
+                            MessageBox.Show("DATA BERHASIL DI HAPUS");
+                            connection.Close();
                     
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error: " + ex.Message);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error: " + ex.Message);
+                        }
                     }
                 }
             }
+
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
+            if (selectedID == "")
+            {
+                MessageBox.Show("Pilih Supplier Terlebih Dahulu!");
+            }
+            else
+            {
+                Brg_edit edit1 = new Brg_edit(selectedID);
+                edit1.ShowDialog();
+            }    
+        }
 
+        public string getID()
+        {
+            return selectedID;
         }
     }
 }

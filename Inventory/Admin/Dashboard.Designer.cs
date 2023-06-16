@@ -200,9 +200,9 @@
             this.gunaLabel17.Font = new System.Drawing.Font("Imprint MT Shadow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel17.Location = new System.Drawing.Point(34, 15);
             this.gunaLabel17.Name = "gunaLabel17";
-            this.gunaLabel17.Size = new System.Drawing.Size(118, 25);
+            this.gunaLabel17.Size = new System.Drawing.Size(129, 25);
             this.gunaLabel17.TabIndex = 2;
-            this.gunaLabel17.Text = "This Week";
+            this.gunaLabel17.Text = "This Month";
             // 
             // gunaCircleProgressBar3
             // 
@@ -330,9 +330,9 @@
             this.gunaLabel20.Font = new System.Drawing.Font("Imprint MT Shadow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel20.Location = new System.Drawing.Point(32, 15);
             this.gunaLabel20.Name = "gunaLabel20";
-            this.gunaLabel20.Size = new System.Drawing.Size(118, 25);
+            this.gunaLabel20.Size = new System.Drawing.Size(129, 25);
             this.gunaLabel20.TabIndex = 1;
-            this.gunaLabel20.Text = "This Week";
+            this.gunaLabel20.Text = "This Month";
             // 
             // gunaCircleProgressBar4
             // 
