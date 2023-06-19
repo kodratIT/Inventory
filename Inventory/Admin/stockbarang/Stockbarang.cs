@@ -95,6 +95,7 @@ namespace Inventory
         {
             Brg_add brg_add = new Brg_add();
             brg_add.ShowDialog();
+            viewData();
         }
 
         private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -134,6 +135,8 @@ namespace Inventory
                     }
                 }
             }
+            viewData();
+
 
         }
 
@@ -147,6 +150,7 @@ namespace Inventory
             {
                 Brg_edit edit1 = new Brg_edit(selectedID);
                 edit1.ShowDialog();
+                viewData();
             }    
         }
 

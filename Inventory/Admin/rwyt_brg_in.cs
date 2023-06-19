@@ -106,6 +106,7 @@ namespace Inventory.Admin
         {
             Brg_In brgin = new Brg_In(user_id);
             brgin.ShowDialog();
+            DataView();
         }
 
         private void gunaLabel5_Click(object sender, EventArgs e)

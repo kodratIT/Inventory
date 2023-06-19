@@ -77,13 +77,13 @@ namespace Inventory
             else
             {
                 // Query SQL untuk mengambil data dari tabel
-                string query = "DELETE  FROM products WHERE product_id=@product_id";
+                string query = "DELETE  FROM stores WHERE id=@_id";
 
                 using (MySqlConnection connection = new MySqlConnection(_db_conn))
                 {
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@product_id", selectedID);
+                        command.Parameters.AddWithValue("@_id", selectedID);
                         try
                         {
                             connection.Open();
@@ -98,6 +98,7 @@ namespace Inventory
                         }
                     }
                 }
+                viewData();
             }
         }
 
@@ -111,6 +112,7 @@ namespace Inventory
             {
                 Store_edit str_ed = new Store_edit(selectedID);
                 str_ed.ShowDialog();
+                viewData();
             }
         }
 
@@ -119,6 +121,7 @@ namespace Inventory
           
             Store_add str_ad = new Store_add();
             str_ad.ShowDialog();
+            viewData();
         }
 
         public string getID()

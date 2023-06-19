@@ -107,6 +107,7 @@ namespace Inventory.Admin
         {
             brg_out brgout = new brg_out(user_id);
             brgout.ShowDialog();
+            DataView();
         }
 
         private void gunaButton2_Click_1(object sender, EventArgs e)

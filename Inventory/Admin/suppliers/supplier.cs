@@ -90,6 +90,7 @@ namespace Inventory
                     }
                 }
             }
+            viewData();
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -101,6 +102,7 @@ namespace Inventory
             {
                 Sup_edit edit = new Sup_edit(selectedID);
                 edit.ShowDialog();
+                viewData();
             }
         }
 
@@ -108,6 +110,7 @@ namespace Inventory
         {
             Supplier_add ad = new Supplier_add();
             ad.ShowDialog();
+            viewData();
         }
 
         public string getID()
