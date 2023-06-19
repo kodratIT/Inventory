@@ -19,13 +19,15 @@ namespace Inventory.Admin
         protected String selectedOption1 ,selectedOption2 = "";
         protected string selectedStr = "";
         protected string _str_id = "";
-        protected int user_id = 1;
+        protected String user_id;
         protected string _IDKel, _store_id ="";
-        public brg_out()
+        public brg_out(string user_id)
         {
             InitializeComponent();
             Database db = new Database();
             Mysql = db.MysqlConn();
+
+            this.user_id = user_id;
         }
 
 
@@ -226,10 +228,10 @@ namespace Inventory.Admin
                         connection.Open();
                         command.ExecuteNonQuery();
                         connection.Close();
-                        MessageBox.Show("success trans");
                     }
                     catch (Exception ex)
                     {
+                        MessageBox.Show(user_id.ToString());
                         MessageBox.Show("Error: " + ex.Message);
                     }
                 }
@@ -256,7 +258,7 @@ namespace Inventory.Admin
                         connection.Open();
                         command.ExecuteNonQuery();
                         connection.Close();
-                        MessageBox.Show("Data Berhasil di Input");
+                        MessageBox.Show("Berhasil Checkout");
 
                     }
                     catch (Exception ex)

@@ -16,11 +16,13 @@ namespace Inventory
     public partial class Dashboard : Form
     {
         protected string _db_conn = "";
-        public Dashboard()
+        string n = "";
+        public Dashboard(string _id)
         {
             InitializeComponent();
             Database db = new Database();
             _db_conn = db.MysqlConn();
+            this.n = _id;
         }
 
         private void button2_Click(object sender, EventArgs e)

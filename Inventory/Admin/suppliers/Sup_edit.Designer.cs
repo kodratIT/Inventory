@@ -201,11 +201,11 @@
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(189, 12);
+            this.gunaLabel5.Location = new System.Drawing.Point(172, 12);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(141, 32);
+            this.gunaLabel5.Size = new System.Drawing.Size(174, 32);
             this.gunaLabel5.TabIndex = 10;
-            this.gunaLabel5.Text = "Update store";
+            this.gunaLabel5.Text = "Update Supplier";
             this.gunaLabel5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Sup_edit

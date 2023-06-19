@@ -32,6 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sidebar));
             this.gunaPanelContainer = new Guna.UI.WinForms.GunaPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.gunaControlBox3 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaResize1 = new Guna.UI.WinForms.GunaResize(this.components);
+            this.gunaButton7 = new Guna.UI.WinForms.GunaButton();
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
@@ -39,13 +44,9 @@
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.gunaControlBox3 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaResize1 = new Guna.UI.WinForms.GunaResize(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaPanelContainer
@@ -65,6 +66,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.gunaButton7);
             this.panel1.Controls.Add(this.gunaCirclePictureBox1);
             this.panel1.Controls.Add(this.gunaButton6);
             this.panel1.Controls.Add(this.gunaButton5);
@@ -76,6 +78,83 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(205, 810);
             this.panel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.gunaControlBox3);
+            this.panel2.Controls.Add(this.gunaControlBox1);
+            this.panel2.Location = new System.Drawing.Point(0, 1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1206, 60);
+            this.panel2.TabIndex = 2;
+            // 
+            // gunaControlBox3
+            // 
+            this.gunaControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaControlBox3.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox3.AnimationSpeed = 0.03F;
+            this.gunaControlBox3.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
+            this.gunaControlBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaControlBox3.IconColor = System.Drawing.Color.Black;
+            this.gunaControlBox3.IconSize = 15F;
+            this.gunaControlBox3.Location = new System.Drawing.Point(1098, 11);
+            this.gunaControlBox3.Name = "gunaControlBox3";
+            this.gunaControlBox3.OnHoverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaControlBox3.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox3.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox3.Size = new System.Drawing.Size(45, 29);
+            this.gunaControlBox3.TabIndex = 3;
+            // 
+            // gunaControlBox1
+            // 
+            this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox1.AnimationSpeed = 0.03F;
+            this.gunaControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaControlBox1.IconColor = System.Drawing.Color.Black;
+            this.gunaControlBox1.IconSize = 15F;
+            this.gunaControlBox1.Location = new System.Drawing.Point(1149, 11);
+            this.gunaControlBox1.Name = "gunaControlBox1";
+            this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.Red;
+            this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.gunaControlBox1.TabIndex = 1;
+            this.gunaControlBox1.Click += new System.EventHandler(this.gunaControlBox1_Click);
+            // 
+            // gunaResize1
+            // 
+            this.gunaResize1.TargetForm = null;
+            // 
+            // gunaButton7
+            // 
+            this.gunaButton7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaButton7.AnimationHoverSpeed = 0.07F;
+            this.gunaButton7.AnimationSpeed = 0.03F;
+            this.gunaButton7.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton7.BaseColor = System.Drawing.Color.White;
+            this.gunaButton7.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaButton7.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton7.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton7.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton7.Image = global::Inventory.Properties.Resources.Arrow_left;
+            this.gunaButton7.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton7.Location = new System.Drawing.Point(12, 366);
+            this.gunaButton7.Name = "gunaButton7";
+            this.gunaButton7.OnHoverBaseColor = System.Drawing.Color.Red;
+            this.gunaButton7.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton7.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton7.OnHoverImage = null;
+            this.gunaButton7.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton7.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton7.TabIndex = 7;
+            this.gunaButton7.Text = "Sign Out";
+            this.gunaButton7.Click += new System.EventHandler(this.gunaButton7_Click_1);
             // 
             // gunaCirclePictureBox1
             // 
@@ -246,56 +325,6 @@
             this.gunaButton1.Text = "Dashboard";
             this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.gunaControlBox3);
-            this.panel2.Controls.Add(this.gunaControlBox1);
-            this.panel2.Location = new System.Drawing.Point(0, 1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1206, 60);
-            this.panel2.TabIndex = 2;
-            // 
-            // gunaControlBox3
-            // 
-            this.gunaControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaControlBox3.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox3.AnimationSpeed = 0.03F;
-            this.gunaControlBox3.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
-            this.gunaControlBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaControlBox3.IconColor = System.Drawing.Color.Black;
-            this.gunaControlBox3.IconSize = 15F;
-            this.gunaControlBox3.Location = new System.Drawing.Point(1098, 11);
-            this.gunaControlBox3.Name = "gunaControlBox3";
-            this.gunaControlBox3.OnHoverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.gunaControlBox3.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox3.Size = new System.Drawing.Size(45, 29);
-            this.gunaControlBox3.TabIndex = 3;
-            // 
-            // gunaControlBox1
-            // 
-            this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox1.AnimationSpeed = 0.03F;
-            this.gunaControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaControlBox1.IconColor = System.Drawing.Color.Black;
-            this.gunaControlBox1.IconSize = 15F;
-            this.gunaControlBox1.Location = new System.Drawing.Point(1149, 11);
-            this.gunaControlBox1.Name = "gunaControlBox1";
-            this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.Red;
-            this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.gunaControlBox1.TabIndex = 1;
-            this.gunaControlBox1.Click += new System.EventHandler(this.gunaControlBox1_Click);
-            // 
-            // gunaResize1
-            // 
-            this.gunaResize1.TargetForm = null;
-            // 
             // sidebar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,8 +342,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.sidebar_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,5 +364,6 @@
         private Guna.UI.WinForms.GunaResize gunaResize1;
         private Guna.UI.WinForms.GunaControlBox gunaControlBox1;
         private Guna.UI.WinForms.GunaControlBox gunaControlBox3;
+        private Guna.UI.WinForms.GunaButton gunaButton7;
     }
 }

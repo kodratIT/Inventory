@@ -23,12 +23,14 @@ namespace Inventory.Admin
         protected String selectedOption = "";
         protected string selectedSup ="";
         protected string _supplier_id = "";
-        protected int user_id = 1;
-        public Brg_In()
+        protected string user_id ;
+        public Brg_In(string user_id)
         {
             InitializeComponent();
             Database db = new Database();
             Mysql = db.MysqlConn();
+
+            this.user_id = user_id;
         }
 
 

@@ -7,11 +7,27 @@
     <ProjectGuid>{887FC8AF-4891-4EB9-A12A-72265B479B55}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Inventory</RootNamespace>
-    <AssemblyName>Inventory</AssemblyName>
+    <AssemblyName>Shopventory</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +47,21 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D8883CCCDB94CCD96B17D83290ED6562B5F75199</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Inventory_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Modern Purple Pink Online Mega Store Logo 3 %281%29.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
@@ -110,6 +141,12 @@
     <Compile Include="Admin\his_out.Designer.cs">
       <DependentUpon>his_out.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\master\master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\master\master.Designer.cs">
+      <DependentUpon>master.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\stockbarang\Brg_add.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +164,12 @@
     </Compile>
     <Compile Include="Admin\stockbarang\Brg_edit.Designer.cs">
       <DependentUpon>Brg_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\store\Store_edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\store\Store_edit.Designer.cs">
+      <DependentUpon>Store_edit.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\store\Store_add.cs">
       <SubType>Form</SubType>
@@ -158,7 +201,20 @@
     <Compile Include="Admin\store\Store.Designer.cs">
       <DependentUpon>Store.cs</DependentUpon>
     </Compile>
+    <Compile Include="Auth\verif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth\verif.Designer.cs">
+      <DependentUpon>verif.cs</DependentUpon>
+    </Compile>
     <Compile Include="config\Database.cs" />
+    <Compile Include="config\DataStorage.cs" />
+    <Compile Include="layout\sidebarSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="layout\sidebarSu.Designer.cs">
+      <DependentUpon>sidebarSu.cs</DependentUpon>
+    </Compile>
     <Compile Include="layout\sidebar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +250,9 @@
     <EmbeddedResource Include="Admin\his_out.resx">
       <DependentUpon>his_out.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\master\master.resx">
+      <DependentUpon>master.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\stockbarang\Brg_add.resx">
       <DependentUpon>Brg_add.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +271,9 @@
     <EmbeddedResource Include="Admin\store\Store_add.resx">
       <DependentUpon>Store_add.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\store\Store_edit.resx">
+      <DependentUpon>Store_edit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\suppliers\Supplier_add.resx">
       <DependentUpon>Supplier_add.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,11 +286,17 @@
     <EmbeddedResource Include="Admin\store\Store.resx">
       <DependentUpon>Store.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Auth\verif.resx">
+      <DependentUpon>verif.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="layout\sidebar.resx">
       <DependentUpon>sidebar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Auth\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="layout\sidebarSu.resx">
+      <DependentUpon>sidebarSu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -249,6 +317,7 @@
     <EmbeddedResource Include="Admin\stockbarang\Stockbarang.resx">
       <DependentUpon>Stockbarang.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Inventory_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -593,6 +662,20 @@
   <ItemGroup>
     <None Include="Resources\WiFi.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modern Purple Pink Online Mega Store Logo 3 %281%29.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

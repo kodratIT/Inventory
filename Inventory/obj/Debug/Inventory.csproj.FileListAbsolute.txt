@@ -350,9 +350,6 @@ D:\Github PVIS\APP\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInp
 D:\Github PVIS\APP\Inventory\Inventory\obj\Debug\Inventory.csproj.CopyComplete
 D:\Github PVIS\APP\Inventory\Inventory\obj\Debug\Inventory.exe
 D:\Github PVIS\APP\Inventory\Inventory\obj\Debug\Inventory.pdb
-C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\bin\Debug\Inventory.exe.config
-C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\bin\Debug\Inventory.exe
-C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\bin\Debug\Inventory.pdb
 C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\bin\Debug\Google.Protobuf.dll
 C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\bin\Debug\Guna.UI.dll
@@ -400,6 +397,17 @@ C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Invento
 C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.cache
 C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
 C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.csproj.CopyComplete
-C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.exe
-C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.pdb
 C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.Admin.stockbarang.Brg_edit.resources
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.Admin.store.Store_edit.resources
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.layout.sidebarSu.resources
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.Admin.master.master.resources
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Inventory.Auth.verif.resources
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\bin\Debug\Shopventory.exe.config
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\bin\Debug\Shopventory.exe.manifest
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\bin\Debug\Shopventory.application
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\bin\Debug\Shopventory.exe
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\bin\Debug\Shopventory.pdb
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Shopventory.exe.manifest
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Shopventory.application
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Shopventory.exe
+C:\Users\kodrat\source\repos\Inventory\new\Inventory\Inventory\obj\Debug\Shopventory.pdb

@@ -101,11 +101,12 @@ namespace Inventory
                         {
                             cnn.Open();
                             cmd = cnn.CreateCommand();
-                            cmd.CommandText = "INSERT INTO users (name,email,username,password) VALUES (@name,@email,@user,@pass)";
+                            cmd.CommandText = "INSERT INTO users (name,email,username,password,role) VALUES (@name,@email,@user,@pass,@role)";
                             cmd.Parameters.AddWithValue("@name", txtName.Text);
                             cmd.Parameters.AddWithValue("@email", txtEmail.Text);
                             cmd.Parameters.AddWithValue("@user", txtUser.Text);
                             cmd.Parameters.AddWithValue("@pass", txtPass.Text);
+                            cmd.Parameters.AddWithValue("@role", 2);
                             cmd.ExecuteNonQuery();
                             cnn.Close();
                             MessageBox.Show("Input data berhasil" + _User);

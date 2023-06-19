@@ -50,6 +50,7 @@ namespace Inventory.Admin
         {
             searchID();
             store();
+            this.Close();
         }
 
         private void store()
@@ -74,7 +75,7 @@ namespace Inventory.Admin
 
                 cmd.ExecuteNonQuery();
                 cnn.Close();
-                MessageBox.Show("Input data berhasil" + _name_product);
+                MessageBox.Show("Input data berhasil");
                 formClear();
             }
             catch (Exception ex)
@@ -162,7 +163,6 @@ namespace Inventory.Admin
                         {
                             _id_sup = reader["id"].ToString();
                         }
-                        MessageBox.Show(_id_sup);
 
                         reader.Close();
                         connection.Close();

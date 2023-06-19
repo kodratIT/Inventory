@@ -1,5 +1,7 @@
 ﻿using Inventory.Admin;
+using Inventory.layout;
 using Inventory.config;
+using Inventory.Auth;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -17,6 +19,9 @@ namespace Inventory
     {
         protected String _username = "";
         protected String _password = "";
+        protected String _role = "";
+
+        protected String _id;
         protected Boolean isLogged = false;
         protected String _db_conn = "";
         public Login()
@@ -26,9 +31,26 @@ namespace Inventory
             _db_conn = db.MysqlConn();
         }
 
+        
+
         public Boolean IsLoggedIn()
         {
             return isLogged;
+        }
+        public Boolean setIsLoggedIn(Boolean i)
+        {
+            this.isLogged = i;
+            return this.isLogged;
+        }
+
+        public String getRole()
+        {
+            return _role;
+        }
+
+        public String getID()
+        {
+            return _id;
         }
 
         private Boolean validasi(String user)
@@ -46,6 +68,9 @@ namespace Inventory
                 {
                     _username = reader["username"].ToString();
                     _password = reader["password"].ToString();
+                    _role = reader["role"].ToString();
+                    _id = reader["id"].ToString();
+
                 }
                 reader.Close();
                 cnn.Close();
@@ -87,9 +112,22 @@ namespace Inventory
                     if (_password == txtPass.Text)
                     {
                         this.Hide();
-                        sidebar s = new sidebar();
-                        s.ShowDialog();
-                        s.BringToFront();
+                        if(_role == "0")
+                        {
+                            sidebar s = new sidebar(_id);
+                            s.ShowDialog();
+                            s.BringToFront();
+                        }else if(_role == "1")
+                        {
+                            sidebarSu su = new sidebarSu(_id);
+                            su.ShowDialog();
+                            su.BringToFront();
+                        }
+                        else
+                        {
+                            verif verif = new verif();
+                            verif.ShowDialog();
+                        }
                     }
                     else
                     {
@@ -101,6 +139,11 @@ namespace Inventory
                     MessageBox.Show("Username & Password Salah!");
                 }
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            this.Activate(); 
         }
     }
 }

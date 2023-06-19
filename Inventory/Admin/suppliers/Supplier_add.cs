@@ -32,12 +32,16 @@ namespace Inventory.Admin.suppliers
             else
             {
                 store();
+                this.Close();
             }
         }
 
         private void store()
         {
-            string query = "INSERT INTO suppliers (id,supplier_name,phone_numvber,address,description) VALUES(NULL,@name,@hp,@address,@des); ";
+            string query = "INSERT INTO suppliers (id,supplier_name,phone_numvber,address,description,created_at) VALUES(NULL,@name,@hp,@address,@des,@time); ";
+            DateTime tanggal = DateTime.Now; // Tanggal saat ini
+
+            string tanggalSql = tanggal.ToString("yyyy-MM-dd HH:mm:ss");
             using (MySqlConnection connection = new MySqlConnection(_Mysql))
             {
                 using (MySqlCommand command = new MySqlCommand(query, connection))
@@ -46,6 +50,7 @@ namespace Inventory.Admin.suppliers
                     command.Parameters.AddWithValue("@hp",hp.Text );
                     command.Parameters.AddWithValue("@address",address.Text );
                     command.Parameters.AddWithValue("@des", des.Text);
+                    command.Parameters.AddWithValue("@time", tanggalSql);
 
                     try
                     {

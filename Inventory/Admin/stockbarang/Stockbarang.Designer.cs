@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.hight = new Guna.UI.WinForms.GunaLabel();
             this.low = new Guna.UI.WinForms.GunaLabel();
             this.total = new Guna.UI.WinForms.GunaLabel();
             this.label5 = new System.Windows.Forms.Label();
@@ -39,10 +40,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
-            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
-            this.btn_hps = new Guna.UI.WinForms.GunaButton();
             this.Btn_edit = new Guna.UI.WinForms.GunaButton();
-            this.hight = new Guna.UI.WinForms.GunaLabel();
+            this.btn_hps = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +65,16 @@
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.gunaShadowPanel1.Size = new System.Drawing.Size(1040, 133);
             this.gunaShadowPanel1.TabIndex = 0;
+            // 
+            // hight
+            // 
+            this.hight.AutoSize = true;
+            this.hight.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.hight.Location = new System.Drawing.Point(301, 92);
+            this.hight.Name = "hight";
+            this.hight.Size = new System.Drawing.Size(13, 15);
+            this.hight.TabIndex = 7;
+            this.hight.Text = "0";
             // 
             // low
             // 
@@ -196,32 +206,32 @@
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gunaDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDataGridView1_CellContentClick);
             // 
-            // gunaButton2
+            // Btn_edit
             // 
-            this.gunaButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaButton2.AnimationSpeed = 0.03F;
-            this.gunaButton2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton2.BaseColor = System.Drawing.Color.Green;
-            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton2.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton2.Image = global::Inventory.Properties.Resources.Cart;
-            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(774, 169);
-            this.gunaButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.gunaButton2.Name = "gunaButton2";
-            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(102)))), ((int)(((byte)(217)))));
-            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton2.OnHoverImage = null;
-            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Radius = 5;
-            this.gunaButton2.Size = new System.Drawing.Size(80, 32);
-            this.gunaButton2.TabIndex = 3;
-            this.gunaButton2.Text = "Add ";
-            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
+            this.Btn_edit.AnimationHoverSpeed = 0.07F;
+            this.Btn_edit.AnimationSpeed = 0.03F;
+            this.Btn_edit.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_edit.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Btn_edit.BorderColor = System.Drawing.Color.Black;
+            this.Btn_edit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_edit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Btn_edit.FocusedColor = System.Drawing.Color.Empty;
+            this.Btn_edit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Btn_edit.ForeColor = System.Drawing.Color.White;
+            this.Btn_edit.Image = global::Inventory.Properties.Resources.Pen;
+            this.Btn_edit.ImageSize = new System.Drawing.Size(20, 20);
+            this.Btn_edit.Location = new System.Drawing.Point(997, 169);
+            this.Btn_edit.Name = "Btn_edit";
+            this.Btn_edit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.Btn_edit.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_edit.OnHoverForeColor = System.Drawing.Color.White;
+            this.Btn_edit.OnHoverImage = null;
+            this.Btn_edit.OnPressedColor = System.Drawing.Color.Black;
+            this.Btn_edit.Radius = 5;
+            this.Btn_edit.Size = new System.Drawing.Size(81, 32);
+            this.Btn_edit.TabIndex = 6;
+            this.Btn_edit.Text = "Edit";
+            this.Btn_edit.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // btn_hps
             // 
@@ -250,42 +260,33 @@
             this.btn_hps.Text = "Delete";
             this.btn_hps.Click += new System.EventHandler(this.btn_hps_Click);
             // 
-            // Btn_edit
+            // gunaButton2
             // 
-            this.Btn_edit.AnimationHoverSpeed = 0.07F;
-            this.Btn_edit.AnimationSpeed = 0.03F;
-            this.Btn_edit.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_edit.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.Btn_edit.BorderColor = System.Drawing.Color.Black;
-            this.Btn_edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_edit.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Btn_edit.FocusedColor = System.Drawing.Color.Empty;
-            this.Btn_edit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Btn_edit.ForeColor = System.Drawing.Color.White;
-            this.Btn_edit.Image = global::Inventory.Properties.Resources.Pen;
-            this.Btn_edit.ImageSize = new System.Drawing.Size(20, 20);
-            this.Btn_edit.Location = new System.Drawing.Point(997, 169);
-            this.Btn_edit.Name = "Btn_edit";
-            this.Btn_edit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.Btn_edit.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_edit.OnHoverForeColor = System.Drawing.Color.White;
-            this.Btn_edit.OnHoverImage = null;
-            this.Btn_edit.OnPressedColor = System.Drawing.Color.Black;
-            this.Btn_edit.Radius = 5;
-            this.Btn_edit.Size = new System.Drawing.Size(81, 32);
-            this.Btn_edit.TabIndex = 6;
-            this.Btn_edit.Text = "Edit";
-            this.Btn_edit.Click += new System.EventHandler(this.gunaButton1_Click);
-            // 
-            // hight
-            // 
-            this.hight.AutoSize = true;
-            this.hight.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.hight.Location = new System.Drawing.Point(301, 92);
-            this.hight.Name = "hight";
-            this.hight.Size = new System.Drawing.Size(13, 15);
-            this.hight.TabIndex = 7;
-            this.hight.Text = "0";
+            this.gunaButton2.AnimationHoverSpeed = 0.07F;
+            this.gunaButton2.AnimationSpeed = 0.03F;
+            this.gunaButton2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton2.BaseColor = System.Drawing.Color.Green;
+            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton2.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton2.Image = global::Inventory.Properties.Resources.Cart;
+            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton2.Location = new System.Drawing.Point(774, 169);
+            this.gunaButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaButton2.Name = "gunaButton2";
+            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(102)))), ((int)(((byte)(217)))));
+            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton2.OnHoverImage = null;
+            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton2.Radius = 5;
+            this.gunaButton2.Size = new System.Drawing.Size(80, 32);
+            this.gunaButton2.TabIndex = 3;
+            this.gunaButton2.Text = "Add ";
+            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
             // 
             // Stockbarang
             // 

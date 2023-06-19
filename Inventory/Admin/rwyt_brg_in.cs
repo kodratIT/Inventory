@@ -18,11 +18,14 @@ namespace Inventory.Admin
     {
         protected String _db_conn = "";
         protected int showEntry = 0;
-        public rwyt_brg_in()
+        protected string user_id;
+        public rwyt_brg_in(string user_id)
         {
             InitializeComponent();
             Database db = new Database();
             _db_conn = db.MysqlConn();
+
+            this.user_id = user_id;
         }
 
         private void gunaButton2_Click(object sender, EventArgs e)
@@ -42,7 +45,7 @@ namespace Inventory.Admin
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            Brg_In brgin = new Brg_In();
+            Brg_In brgin = new Brg_In(user_id);
             brgin.ShowDialog();          
         }
 
@@ -101,7 +104,7 @@ namespace Inventory.Admin
 
         private void gunaButton1_Click_1(object sender, EventArgs e)
         {
-            Brg_In brgin = new Brg_In();
+            Brg_In brgin = new Brg_In(user_id);
             brgin.ShowDialog();
         }
 

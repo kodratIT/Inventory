@@ -1,9 +1,13 @@
 ﻿using Inventory.Admin;
+using Inventory.layout;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Inventory.config;
+
 
 namespace Inventory
 {
@@ -13,26 +17,36 @@ namespace Inventory
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
+
         static void Main()
         {
-              Application.EnableVisualStyles();
+
+            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new brg_out());
-            Application.Run(new sidebar());
-            // if(islogin.IsLoggedIn() == true) {
-            //    Application.Run(new sidebar());
-            //  }
-            // else
-            // {
-            //    Application.Run(new Login());
-            //    if(islogin.IsLoggedIn() == true)
-            //   {
-            //          Application.Exit();
-            //      Application.Run(new sidebar());
-            //   }
-            //   }
+            
+            string id;
+            string role;
+            Boolean isloggin=false;
+            Login login = new Login();
+            if (login.ShowDialog() == DialogResult.OK)
+            {
+                id = login.getID();
+                role = login.getRole();
+                isloggin = login.IsLoggedIn();
 
-
+                if (role == "0")
+                {
+                    Application.Run(new sidebar(id));
+                }else if(role == "1")
+                {
+                    Application.Run(new sidebarSu(id));
+                }
+                else
+                {
+                    Application.Run(new Login());
+                }
+            }
+          
         }
     }
 }

@@ -64,34 +64,38 @@ namespace Inventory
         private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
          
-                selectedID = gunaDataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                //textBoxNama.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                //textBoxNIM.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-                //textBoxNotelepon.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-                //textBoxAlamat.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                selectedID = gunaDataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+               
         }
 
         private void btn_hps_Click(object sender, EventArgs e)
         {
-            // Query SQL untuk mengambil data dari tabel
-            string query = "DELETE  FROM products WHERE product_id=@product_id";
-
-            using (MySqlConnection connection = new MySqlConnection(_db_conn))
+            if (selectedID == "")
             {
-                using (MySqlCommand command = new MySqlCommand(query, connection))
+                MessageBox.Show("Pilih Store Terlebih Dahulu!");
+            }
+            else
+            {
+                // Query SQL untuk mengambil data dari tabel
+                string query = "DELETE  FROM products WHERE product_id=@product_id";
+
+                using (MySqlConnection connection = new MySqlConnection(_db_conn))
                 {
-                    command.Parameters.AddWithValue("@product_id", selectedID);
-                    try
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
-                        connection.Open();
-                        command.ExecuteNonQuery();
-                        MessageBox.Show("DATA BERHASIL DI HAPUS");
-                        connection.Close();
+                        command.Parameters.AddWithValue("@product_id", selectedID);
+                        try
+                        {
+                            connection.Open();
+                            command.ExecuteNonQuery();
+                            MessageBox.Show("DATA BERHASIL DI HAPUS");
+                            connection.Close();
                     
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error: " + ex.Message);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error: " + ex.Message);
+                        }
                     }
                 }
             }
@@ -99,13 +103,27 @@ namespace Inventory
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-
+            if (selectedID == "")
+            {
+                MessageBox.Show("Pilih Store Terlebih Dahulu!");
+            }
+            else
+            {
+                Store_edit str_ed = new Store_edit(selectedID);
+                str_ed.ShowDialog();
+            }
         }
 
         private void gunaButton1_Click_1(object sender, EventArgs e)
         {
+          
             Store_add str_ad = new Store_add();
             str_ad.ShowDialog();
+        }
+
+        public string getID()
+        {
+            return selectedID;
         }
     }
 }
