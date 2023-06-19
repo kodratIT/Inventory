@@ -1,0 +1,2 @@
+# Inventory
+Project Inventory Gudang
